@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="CSharp.Demo4a">
+      <HintPath>..\..\CSharp.Demo4a\CSharp.Demo4a\bin\Debug\net5.0\CSharp.Demo4a.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

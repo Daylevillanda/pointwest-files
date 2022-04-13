@@ -1,0 +1,16 @@
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\bin\Debug\net5.0\myDemo2d.exe
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\bin\Debug\net5.0\myDemo2d.deps.json
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\bin\Debug\net5.0\myDemo2d.runtimeconfig.json
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\bin\Debug\net5.0\myDemo2d.runtimeconfig.dev.json
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\bin\Debug\net5.0\myDemo2d.dll
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\bin\Debug\net5.0\myDemo2d.pdb
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\obj\Debug\net5.0\myDemo2d.csproj.AssemblyReference.cache
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\obj\Debug\net5.0\myDemo2d.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\obj\Debug\net5.0\myDemo2d.AssemblyInfoInputs.cache
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\obj\Debug\net5.0\myDemo2d.AssemblyInfo.cs
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\obj\Debug\net5.0\myDemo2d.csproj.CoreCompileInputs.cache
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\obj\Debug\net5.0\myDemo2d.dll
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\obj\Debug\net5.0\refint\myDemo2d.dll
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\obj\Debug\net5.0\myDemo2d.pdb
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\obj\Debug\net5.0\myDemo2d.genruntimeconfig.cache
+C:\Users\dayle.villanda\Documents\Bootcamp\Back End\myDemo2\myDemo2d\obj\Debug\net5.0\ref\myDemo2d.dll
