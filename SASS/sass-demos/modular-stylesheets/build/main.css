@@ -1,0 +1,16 @@
+body {
+  background-color: pink;
+  color: black;
+  font: 16px "Comic Sans MS";
+}
+
+a.some-link, a.some-link:link, a.some-link:visited {
+  font-size: 20px;
+  color: green;
+  text-decoration: underline;
+}
+a.some-link:hover, a.some-link:focus {
+  color: #001a00;
+}
+
+/*# sourceMappingURL=main.css.map */

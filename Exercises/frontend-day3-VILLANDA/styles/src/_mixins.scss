@@ -1,0 +1,15 @@
+@use 'variables';
+
+@mixin link-color($color) {
+  &,
+  &:link,
+  &:visited {
+    color: $color;
+    text-decoration: none;
+  }
+
+  &:hover,
+  &:focus {
+    color: darken($color, 20%);
+  }
+}

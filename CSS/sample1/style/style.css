@@ -1,0 +1,25 @@
+.flex-header {
+    display: flex;
+    width: 100%;
+    height: 600px;
+    border: 1px solid #000;
+    align-items: center;
+    justify-content: center;
+    }
+
+.flex-item {
+    margin: 12px;
+    width: 100%;
+    height: 500px;
+    background-color: blue;
+    }
+
+.right {
+    width: 500px;
+    background: url("../img/prod_det_pic.jpeg") no-repeat center center;
+    background-size: 100% 100%;
+    }
+
+.left {
+    width: 300px;
+    }

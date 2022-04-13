@@ -1,0 +1,62 @@
+body {
+  margin: 0;
+  font-family: 'Comic Sans MS';
+}
+
+nav {
+  background-color: #333;
+}
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav > ul > li {
+  display: inline;
+}
+
+nav > ul > li > a {
+  display: inline-block;
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #fff;
+}
+
+nav > ul > li > a:hover {
+  background-color: #111;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 72px;
+}
+
+article {
+  flex: 1;
+}
+
+article,
+aside {
+  padding: 12px;
+}
+
+aside {
+  width: 300px;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  section {
+    display: flex;
+  }
+}

@@ -1,0 +1,12 @@
+@use 'variables';
+@use 'mixins';
+
+body {
+  background-color: variables.$bg-color;
+  color: variables.$text-color;
+  font: 16px variables.$font;
+}
+
+a.some-link {
+  @include mixins.link-color(green);
+}

@@ -1,0 +1,12 @@
+#bukod {
+  color: fuchsia;
+}
+
+/* This applies to special elements */
+.ispeyshal {
+  color: green; /* Magiging green siya */
+}
+
+h1 {
+  color: pink !important;
+}

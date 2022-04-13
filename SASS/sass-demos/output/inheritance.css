@@ -1,0 +1,14 @@
+.message {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #777;
+}
+.message span {
+  font-weight: bold;
+}
+
+.message {
+  background-color: pink;
+}
+
+/*# sourceMappingURL=inheritance.css.map */

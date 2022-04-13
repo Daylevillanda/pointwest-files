@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Orders</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <div class="main">    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li>
+                <form>
+                    <input name="search-text-field" type="text" placeholder="Enter text here">
+                    <input type="submit" value="Search">        
+                </form>
+                </li>               
+            </ul>
+        </nav>
+        <!-- order details -->
+        <div class="flex-row-product">
+            <div class="flex-items-product">
+                <form>
+                    <table border="1">
+                        <tr>
+                            <td>
+                                <h3>Galaxy Z Fold3 5G</h3>
+                                <img src="img/product_3.jpeg" alt="product 3" id="img-custom-size">
+                            </td>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                        <tr>                
+                            <td>
+                                <h3>Galaxy Z Flip3 5G</h3>
+                                <img src="img/product_4.jpeg" alt="product 3" id="img-custom-size">
+                            </td>
+                            <td>
+                                <input type="checkbox">
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+            </div>                
+            <div class="flex-items-product">
+                <form action="success.html" target="_self">
+                    <div><span>Delivery Details</span></div>
+                    <div>
+                        <label for="address-text-field">Address</label>
+                        <input name="address-text-field" type="text" placeholder="Enter text here">
+                    </div>
+                    <div>
+                        <label for="phone-text-field">Phone Number</label>
+                        <input name="phone-text-field" type="text" pattern="^09[0-9]{9}$">
+                    </div>
+                    <div>
+                        <span>Mode of Payment</span>
+                        <input id="radio-btn-1" name="radio-btn" type="radio" value="COD">
+                        <label for="radio-btn-1">COD</label>
+                        <input id="radio-btn-2" name="radio-btn" type="radio" value="CASH">
+                        <label for="radio-btn-2">CASH</label>
+                      </div>
+                    <div>
+                        <input type="submit" value="Checkout">
+                    </div>
+                </form>
+            </div>
+        </div>      
+       
+    </div>
+
+</body>
+</html>

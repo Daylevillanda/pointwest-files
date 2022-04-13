@@ -1,0 +1,9 @@
+.message {
+  padding: 12px;
+  background-color: #ccc;
+}
+
+.error {
+  background-color: red;
+  color: white;
+}

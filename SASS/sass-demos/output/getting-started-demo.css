@@ -1,0 +1,26 @@
+nav {
+  background-color: pink;
+}
+nav > ul {
+  list-style: none;
+  margin: 0;
+}
+nav > ul > li {
+  display: inline-block;
+  padding: 0;
+}
+nav > ul > li > a {
+  color: darkgray;
+}
+nav > ul > li > a:hover {
+  color: #909090;
+}
+
+.navbar {
+  background-color: black;
+}
+.navbar__ul {
+  color: white;
+}
+
+/*# sourceMappingURL=getting-started-demo.css.map */

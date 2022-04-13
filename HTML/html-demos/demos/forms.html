@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+  </head>
+  <body>
+    <a href="../index.html">Back to Home</a>
+    <h1 style="font-family:'Comic Sans MS';color:#ff0000">Forms</h1>
+
+    <form>
+
+      <div>
+        <label for="text-field">Text Field</label>
+        <input name="text-field" type="text" maxlength="10" value="prefilled" required>
+      </div>
+
+      <div>
+        <label for="placeholder-text-field">Text Field with Placeholder</label>
+        <input name="placeholder-text-field" type="text" placeholder="Enter text here">
+      </div>
+
+      <div>
+        <label for="pattern-text-field">Text Field with Pattern</label>
+        <input name="pattern-text-field" type="text" pattern="^09[0-9]{9}$">
+      </div>
+
+      <div>
+        <label for="check">Checkbox</label>
+        <input name="check" type="checkbox">
+      </div>
+
+      <div>
+        <input id="radio-btn-1" name="radio-btn" type="radio" value="One">
+        <label for="radio-btn-1">One</label>
+        <input id="radio-btn-2" name="radio-btn" type="radio" value="Two">
+        <label for="radio-btn-2">Two</label>
+        <input id="radio-btn-3" name="radio-btn" type="radio" value="Three">
+        <label for="radio-btn-3">Three</label>
+      </div>
+
+      <div>
+        <label for="date">Date</label>
+        <input name="date" type="date" disabled>
+      </div>
+
+      <div>
+        <label for="kulay">Color</label>
+        <input name="kulay" type="color">
+      </div>
+
+      <input type="submit" value="GO NA">
+
+    </form>
+  </body>
+</html>

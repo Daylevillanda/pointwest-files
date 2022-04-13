@@ -1,0 +1,18 @@
+%message-shared {
+  border: 1px solid #ccc;
+  padding: 10px;
+  color: #777;
+
+  span {
+    font-weight: bold;
+  }
+}
+
+%another-shared {
+  background-color: pink;
+}
+
+.message {
+  @extend %message-shared;
+  @extend %another-shared;
+}

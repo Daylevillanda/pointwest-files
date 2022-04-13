@@ -1,0 +1,16 @@
+@use 'variables';
+
+@mixin link-color($color) {
+  &,
+  &:link,
+  &:visited {
+    font-size: variables.$font-size;
+    color: $color;
+    text-decoration: underline;
+  }
+
+  &:hover,
+  &:focus {
+    color: darken($color, 20%);
+  }
+}

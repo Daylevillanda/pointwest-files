@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Product Details</title>    
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>    
+    <div class="main">    
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Orders</a></li>
+                <li>
+                <form>
+                    <input name="search-text-field" type="text" placeholder="Enter text here">
+                    <input type="submit" value="Search">        
+                </form>
+                </li>               
+            </ul>
+        </nav>
+        <!-- product details -->
+        <div class="flex-row-product">
+            <div class="flex-items-product">
+                <img src="img/prod_det_pic.jpeg" alt="product detail">
+            </div>                
+            <div class="flex-items-product">
+                <p>Folds into your pocket. Tucks into your purse. Slips into your skinniest jeans. 
+                    Then you can take it out and it flips open into a full-screened 5G smartphone 
+                    and flexes to your favorite angles
+                </p>
+                <span>Best Features</span>
+                <ul>
+                    <li>6.7-inch Dynamic AMOLED screen</li>
+                    <li>12-megapixel, 12-megapixel rear camera</li>                            
+                    <li>10-megapixel front camera</li>
+                    <li>128 GB memory</li>
+                </ul>
+                <label for="colors">Choose a Color:</label>
+                <select name="colors">
+                    <option value="volvo">Black</option>
+                    <option value="saab">Red</option>
+                    <option value="opel">Blue</option>
+                    <option value="audi">White</option>
+                </select>
+                <form action="order.html" target="_self">
+                    <input type="submit" value="BUY NOW">
+                </form>
+            </div>
+        </div>
+    <div>
+</body>
+</html>

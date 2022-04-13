@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Order Page</title>
+</head>
+<body>
+    <div>
+        <div>
+            <header style="text-align: center;">
+                <h1>Order Page</h1>
+            </header>
+            <nav>
+                <a href="../frontend-day1-VILLANDA/index.html">Home</a>
+            </nav>
+        </div>
+    </div>
+    <div>
+        <form>
+            <table border="1">
+                <tr>
+                    <td>
+                        <h3>Galaxy Z Fold3 5G</h3>
+                        <img src="../frontend-day1-VILLANDA/img/product_3.jpeg" alt="product 3">
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                </tr>
+                <tr>                
+                    <td>
+                        <h3>Galaxy Z Flip3 5G</h3>
+                        <img src="../frontend-day1-VILLANDA/img/product_4.jpeg" alt="product 3">
+                    </td>
+                    <td>
+                        <input type="checkbox">
+                    </td>
+                </tr>
+            </table>
+        </form>
+        
+        <!--Delivery Details-->
+        <form action="../frontend-day1-VILLANDA/success.html" target="_self">
+            <div><span>Delivery Details</span></div>
+            <div>
+                <label for="address-text-field">Address</label>
+                <input name="address-text-field" type="text" placeholder="Enter text here">
+            </div>
+            <div>
+                <label for="phone-text-field">Phone Number</label>
+                <input name="phone-text-field" type="text" pattern="^09[0-9]{9}$">
+            </div>
+            <div>
+                <span>Mode of Payment</span>
+                <input id="radio-btn-1" name="radio-btn" type="radio" value="COD">
+                <label for="radio-btn-1">COD</label>
+                <input id="radio-btn-2" name="radio-btn" type="radio" value="CASH">
+                <label for="radio-btn-2">CASH</label>
+              </div>
+            <div>
+                <input type="submit" value="Checkout">
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+@mixin link-color($color, $font: 'Comic Sans MS') {
+  font-family: $font;
+  color: $color;
+
+  &:hover {
+    color: lighten($color, 30%);
+  }
+
+  span {
+    font-weight: bold;
+    font-size: 1.2em;
+  }
+}
+
+a.some-link {
+  @include link-color(fuchsia);
+}
+
+a.another-link {
+  @include link-color(green, Arial);
+}

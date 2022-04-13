@@ -1,0 +1,9 @@
+$page-width: 1200px;
+$something-width: calc($page-width / 2);
+
+.something {
+  padding: 144px;
+  width: calc($something-width * 0.7);
+  height: 1280px * 0.2;
+  font-family: 'Comic Sans MS', sans-serif;
+}

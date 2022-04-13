@@ -1,0 +1,29 @@
+.flex-sample {
+  display: flex;
+  width: 400px;
+  height: 200px;
+  border: 1px solid #000;
+}
+
+.flex-item {
+  margin: 12px;
+  width: 80px;
+  height: 80px;
+  background-color: blue;
+}
+
+.grow {
+  flex-grow: 1;
+}
+
+#align-items {
+  align-items: center;
+}
+
+#justify-content {
+  justify-content: center;
+}
+
+#space-between {
+  justify-content: space-between;
+}

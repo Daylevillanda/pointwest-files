@@ -1,0 +1,25 @@
+a.some-link {
+  font-family: "Comic Sans MS";
+  color: fuchsia;
+}
+a.some-link:hover {
+  color: #ff99ff;
+}
+a.some-link span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+a.another-link {
+  font-family: Arial;
+  color: green;
+}
+a.another-link:hover {
+  color: #1aff1a;
+}
+a.another-link span {
+  font-weight: bold;
+  font-size: 1.2em;
+}
+
+/*# sourceMappingURL=mixins.css.map */

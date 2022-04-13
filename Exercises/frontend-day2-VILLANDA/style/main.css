@@ -1,0 +1,110 @@
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS';
+    background-color: #7DA2A9;
+  }
+
+div.main {
+    padding: 30px;
+}
+
+header {
+    width: 100%;
+    height: 300px;
+    background: url("../img/welcome.jpg") no-repeat center center;
+    background-size: cover;
+    margin-top: 10px;
+   }
+
+nav {
+    background-color: #E1E2E2;
+  }
+
+nav > ul {
+  list-style: none;
+  margin: 0;
+  padding: 10px;
+  text-align: right;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+nav > ul > li > a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #425664;
+}
+
+nav > ul > li > a:hover {
+  background-color: #ACBFE6;
+}
+
+.flex-header {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  flex-direction: column;
+  background-color: #E1E2E2;
+}
+
+section > h1 {
+  margin: 0;
+  font-size: 52px;
+}
+
+.flex-row {
+  display: flex;
+  width: 100%;
+}
+
+.flex-items {
+  margin: 12px;
+  width: 300px;
+  height: 300px;
+  text-align: center;
+}
+
+div > a {
+  padding: 8px 12px;
+  text-decoration: none;
+  color: #425664;
+}
+
+footer {
+  border-top: 1px solid #ccc;
+  text-align: center;
+  margin-top: 10px;
+}
+
+img {
+  width: 100%;
+}
+
+.flex-row-product {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  background-color: #E1E2E2;
+  justify-content: center;
+}
+
+.flex-items-product {
+  margin: 12px;
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+
+table {
+  margin: 0px;
+  text-align: center;
+  width: 100%;
+  height: 100px;
+}
+
+#img-custom-size {
+  width: 200px;
+  height: 150px;
+}
