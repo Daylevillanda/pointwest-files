@@ -1,0 +1,40 @@
+<div class="container">
+  <h2> 🛒My Cart ({{getTotalQuantity()}})</h2>
+
+  <!-- display if EMPTY CART -->
+  <div class="empty-cart" *ngIf="getTotalQuantity() === 0">
+    <img class="sadcart" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZTa2d8pa-liAyiWCbPHQ_2yfyz1I6fAcSyas2ZU9CJNPIsavq0G2dV1g9p51_f1xgd9M&usqp=CAU" alt="cart photo">
+    <p class="emptystatement">Your cart is empty.</p>
+    <br>
+    <button class="btn" routerLink="/" >🛍️Start Shopping</button>
+  </div>
+
+  <!-- display if w/ ITEM/s -->
+  <div class="itemsContainer">
+    <div class="addedToCart" *ngFor="let item of cartItems; let i = index">
+      <div class="box1" ><img [src]="item.productPhoto" alt="product photo"></div>
+      <div class="box2">
+        <h3><a [routerLink]="['/product-details', item.productid]">  {{item.productName}}</a></h3>
+        <p> {{item.productTotalPrice | currency:'PHP'}}</p>
+        <p>Qty: {{item.productTotalQuantity}}</p>
+      </div>
+      <div class="box3">
+        <button  class="delBtn" (click)="activateModal(i)">🗑️DELETE</button>
+      </div> 
+    </div>
+  </div>
+</div>
+
+<div [ngClass]="{'modal-container': true, 'show': showModal}">
+  <div class="modal">
+    <div class="modalContent">
+      <div class="header">
+        <p>Delete Confirmation</p> 
+      </div>
+      <h3>Are you sure you want to delete?</h3>
+      <br>
+      <button id="yes-btn" (click)="remove('yes')">Yes</button>
+      <button id="no-btn" (click)="remove('no')">No</button>
+    </div>
+  </div>
+</div>

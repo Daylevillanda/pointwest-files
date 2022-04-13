@@ -1,0 +1,9 @@
+<h1>Simple Observable: {{value}}</h1>
+<button (click)="changeName()">Change the name</button>
+<app-panganay></app-panganay>
+<app-bunso></app-bunso>
+<ul>
+  <li *ngFor="let product of products">
+    {{product.name}}
+  </li>
+</ul>

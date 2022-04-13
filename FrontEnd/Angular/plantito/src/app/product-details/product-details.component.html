@@ -1,0 +1,47 @@
+<div id="page-div">
+    <div id="product-details-div">
+        <div id="product-photo">
+            <img [src]="product.productPhoto" alt="plant photo" />
+        </div>
+        <div id="product-details">
+            <h1>{{product.productName}}</h1>
+            <p>{{product.productPrice | currency:'PHP'}}</p>
+            <p>{{product_rating | number:'1.1-1'}} stars ({{review_count}} reviews)</p>
+            <br />
+            <p>{{product.productDescription}}</p>
+            
+            <form [formGroup]="myForm" (submit)="activateModal()">
+                <input type="number" formControlName="quantity" min="1">
+                <input type="submit" value="🛒Add to Cart" [disabled]="myForm.invalid">
+                <p [ngClass]="{'err-message': quantity?.errors?.['pattern'] || quantity?.errors?.['required']}">Invalid input. Please input whole numbers and must be atleast 1</p>
+            </form>
+        </div>
+    </div>
+    
+    <div id="product-review-div">
+        <h3>Ratings & Reviews({{review_count}})</h3>
+        <ul *ngFor="let review of product.productReview">
+            <div id="username-date-div">
+                <li><h4>{{review.reviewUserName}}</h4></li>
+                <li id="date">{{review.reviewDate}}</li>
+            </div>
+            <li>{{review.reviewContent}}</li>
+            <li>
+                <span *ngFor="let _ of createStarArray(review.reviewRating)">⭐</span>
+                <span *ngFor="let _ of createGrayStar(review.reviewRating)" id="gray-star">⭐</span>
+            </li>
+            <li><hr /></li>
+        </ul>
+    </div>
+</div>
+
+<div [ngClass]="{'modal-container': true, 'show': showModal}">
+    <div class="modal">
+        <h3>{{product.productName}}</h3>
+        <p>Quantity: {{quantity?.value}}</p>
+        <p>Price: {{product.productPrice | currency:"PHP"}}</p>
+        <p>TotalPrice: {{quantity?.value * product.productPrice | currency:"PHP"}}</p>
+        <button (click)="confirmPurchase('yes')">Okay</button>
+        <button (click)="confirmPurchase('no')">No</button>
+    </div>
+  </div>

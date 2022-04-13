@@ -1,0 +1,9 @@
+<h1>Forms Demo</h1>
+<app-template-driven-form></app-template-driven-form>
+<app-reactive-form (customSubmit)="handleReactiveFormSubmit($event)"></app-reactive-form>
+<ul>
+  <li *ngFor="let data of formData">
+    {{data | json}}
+  </li>
+</ul>
+<app-fb-form></app-fb-form>

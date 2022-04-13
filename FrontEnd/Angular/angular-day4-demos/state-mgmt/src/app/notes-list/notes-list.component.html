@@ -1,0 +1,7 @@
+<h1>My Notes</h1>
+<button (click)="createNote()">New Note</button>
+<ul>
+  <li *ngFor="let note of (notes$ | async); let i = index">
+    <a routerLink="{{i}}">{{note.title}}</a>
+  </li>
+</ul>

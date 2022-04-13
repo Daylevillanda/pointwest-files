@@ -1,0 +1,24 @@
+
+<div class="container">
+    <div class="content">
+        <h2>{{getFilteredProduct().length}} matches for "{{inputSearch}}"</h2>
+        <div class="grid-container">
+            <div class="product-container" *ngFor="let item of getFilteredProduct()">
+                <div 
+                    class="photo" 
+                    [style.background-image]="'url('+item.productPhoto+')'"
+                ></div>
+                <div class="details">
+                    <h3><a [routerLink]="['/product-details', item.productId]">{{item.productName}}</a></h3>
+                    <span id="price">{{item.productPrice | currency:'PHP'}}</span>
+                    <span>{{getAvgRating(item.productReview) | number:'1.1-1'}} stars ({{getReviewCount(item.productReview)}} reviews)</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+

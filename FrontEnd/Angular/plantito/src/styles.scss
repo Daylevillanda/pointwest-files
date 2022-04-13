@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    font-family: 'Comic Sans MS';
+}
+
+a {
+    text-decoration: none;
+
+    &,
+    &:link,
+    &:visited {
+        color: black;
+    }
+
+    &:hover {
+        // background-color: rgb(18, 18, 71);
+        color:lighten($color: black, $amount: 40%)
+    }
+}
+
+input {
+    &,
+    &:focus {
+        outline: none;
+    }
+    background-color: rgba(250, 250, 250, 0.966);
+}
+
+.modal-container{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: #6b6a6a, $alpha: 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.5s;
+
+}
+.modal{
+    background-color: rgb(255, 255, 255);
+    height: 33%;
+    width: 30%;
+    border-radius: 15px;
+    padding-top: 0;
+}
+
+.show{
+    visibility: visible;
+    opacity: 1;
+}

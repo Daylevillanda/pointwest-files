@@ -1,0 +1,9 @@
+#content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+#productPhoto img {
+  width: 100%;
+  height: auto;
+}

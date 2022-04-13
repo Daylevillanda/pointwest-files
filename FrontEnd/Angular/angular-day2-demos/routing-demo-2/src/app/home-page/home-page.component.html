@@ -1,0 +1,10 @@
+<h1>Kalzada</h1>
+<div id="products">
+  <div class="product" *ngFor="let product of products">
+    <img [src]="product.photo">
+    <h2>
+      <a routerLink="/product/{{product.id}}">{{product.name}}</a>
+    </h2>
+    <p>{{product.price | currency:'PHP'}} - {{product.rating}} stars</p>
+  </div>
+</div>

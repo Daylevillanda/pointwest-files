@@ -1,0 +1,21 @@
+<div class="container">
+    <div class="nav-contianer">        
+        <div class="nav-content logo">
+            <a (click)="clearSearch()" routerLink="/">Plantito</a>
+        </div>
+        <div class="nav-content search">
+            <div class="search-content">                
+                <input type="text" [(ngModel)]="inputSearch" (keyup.enter)="search()" #inputRef placeholder="Search for products">
+                <button (click)="search()"><img src="../assets/img/search-icon.JPG" alt=""></button>
+            </div>
+        </div>
+        <div class="nav-content cart">
+            <a routerLink="carts" class="mycart" (click)="clearSearch()">
+                <!-- My Cart <span *ngIf="carts$.value.length > 0">({{carts$.value.length}})</span> -->
+                My Cart <span *ngIf="carts$.value.length > 0">({{getTotalCart()}})</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+

@@ -1,0 +1,11 @@
+<div id="content">
+  <div id="productPhoto">
+    <img [src]="product.photo">
+  </div>
+  <div id="productDetails">
+    <h1>{{product.name}}</h1>
+    <div class="price">PHP {{product.price}}</div>
+    <p>{{product.description}}</p>
+    <app-rating-stars [rating]="product.rating"></app-rating-stars>
+  </div>
+</div>

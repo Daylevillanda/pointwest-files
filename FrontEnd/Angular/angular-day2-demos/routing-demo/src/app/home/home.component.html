@@ -1,0 +1,7 @@
+<h1>Products</h1>
+<ul>
+  <li *ngFor="let product of products">
+    <a [routerLink]="['products', product]">{{product}}</a>
+  </li>
+</ul>
+<button (click)="buttonClicked()">go to another page</button>

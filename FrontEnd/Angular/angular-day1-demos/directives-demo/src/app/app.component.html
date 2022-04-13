@@ -1,0 +1,61 @@
+<h1>Directives Demo</h1>
+
+<h2>ngFor</h2>
+<ul>
+  <li *ngFor="let food of foods">
+    {{food.name}}: PHP {{food.price.toFixed(2)}}
+  </li>
+</ul>
+
+<h2>ngIf</h2>
+<input type="checkbox" (change)="setIsLoggedIn($event)" [checked]="isLoggedIn">
+<label>Is Logged In</label>
+<p *ngIf="isLoggedIn; else elseBlock">Hello, user!</p>
+<ng-template #elseBlock>
+  <p>You must log in to continue.</p>
+</ng-template>
+
+<h2>ngSwitch</h2>
+<select [value]="language" (change)="setLanguage($event)">
+  <option value="en">English</option>
+  <option value="jp">Japanese</option>
+  <option value="kr">Korean</option>
+  <option value="zh">Chinese</option>
+</select>
+<p [ngSwitch]="language">
+  <span *ngSwitchCase="'en'">Hello</span>
+  <span *ngSwitchCase="'jp'">こんにちは</span>
+  <span *ngSwitchCase="'kr'">안녕하세요</span>
+  <span *ngSwitchDefault>(not supported yet sorry)</span>
+</p>
+
+<h2>ngClass</h2>
+<span>
+  <input type="checkbox" name="red" (change)="setNgClass($event, 'red')">
+  <label for="red">red</label>
+</span>
+<span>
+  <input type="checkbox" name="emphasis" (change)="setNgClass($event, 'emphasis')">
+  <label for="emphasis">emphasis</label>
+</span>
+<span>
+  <input type="checkbox" name="alien" (change)="setNgClass($event, 'alien')">
+  <label for="alien">alien</label>
+</span>
+<h1 [ngClass]="ngClassOptions">I use ngClass!</h1>
+
+<h2>ngStyle</h2>
+<select name="font" [value]="ngStyleOptions.fontFamily" (change)="setStyle($event, 'fontFamily')">
+  <option>Arial</option>
+  <option>Comic Sans MS</option>
+  <option>Wingdings</option>
+</select>
+<select name="size" [value]="ngStyleOptions.fontSize" (change)="setStyle($event, 'fontSize')">
+  <option>16px</option>
+  <option>24px</option>
+  <option>32px</option>
+</select>
+<h1 [ngStyle]="ngStyleOptions">I use ngStyle!</h1>
+
+<h1>Component from another module</h1>
+<app-sample></app-sample>
