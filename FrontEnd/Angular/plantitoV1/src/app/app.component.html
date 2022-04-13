@@ -1,0 +1,20 @@
+<p>{{products$.value| json}}</p>
+<ul>
+  <li *ngFor="let product of (products$ | async); let i = index">
+    {{product.productName}}
+  </li>
+</ul>
+
+
+<p>another way</p>
+<p>{{products| json}}</p>
+
+
+
+<p>another way</p>
+<p>{{products2$ | json}}</p>
+<ul>
+  <li *ngFor="let product of (products2$ | async); let i = index">
+    {{product.productName}}
+  </li>
+</ul>
