@@ -10,21 +10,24 @@ namespace CSharp.Demo7f.Collection
         public string FirstName { get; set; }
         public string LastName { get; set; }
         public int GradeLevel { get; set; }
-
         public bool Equals(Student other)
         {
-            if(other == null)
+            if (other == null)
             {
                 throw new ArgumentException("Student object cannot be null");
             }
 
             return this.ID == other.ID;
         }
+        public override int GetHashCode()
+        {
+            return ID.GetHashCode();
+        }
 
         public override string ToString()
         {
             return $"{ID}, {FirstName}, {LastName}, {GradeLevel}";
-        }
+        }  
     }
 
     class Program
@@ -62,19 +65,19 @@ namespace CSharp.Demo7f.Collection
             Console.WriteLine($"~~ Student Count: {students.Count}");
 
 
-            HashSet<string> uniqueMessages = new HashSet<string>();
-            Console.WriteLine(uniqueMessages.Add("A"));
-            Console.WriteLine(uniqueMessages.Add("B"));
-            Console.WriteLine(uniqueMessages.Add("C"));
-            Console.WriteLine(uniqueMessages.Add("A"));
-            Console.WriteLine(uniqueMessages.Add("B"));
-            Console.WriteLine(uniqueMessages.Add("C"));
+            //HashSet<string> uniqueMessages = new HashSet<string>();
+            //Console.WriteLine(uniqueMessages.Add("A"));
+            //Console.WriteLine(uniqueMessages.Add("B"));
+            //Console.WriteLine(uniqueMessages.Add("C"));
+            //Console.WriteLine(uniqueMessages.Add("A"));
+            //Console.WriteLine(uniqueMessages.Add("B"));
+            //Console.WriteLine(uniqueMessages.Add("C"));
             
-            Console.WriteLine($"~~ Number of messages: {uniqueMessages.Count}");
-            foreach(var uniqueMessage in uniqueMessages)
-            {
-                Console.WriteLine($"~~ Message: {uniqueMessage}");
-            }
+            //Console.WriteLine($"~~ Number of messages: {uniqueMessages.Count}");
+            //foreach(var uniqueMessage in uniqueMessages)
+            //{
+            //    Console.WriteLine($"~~ Message: {uniqueMessage}");
+            //}
 
         }
     }

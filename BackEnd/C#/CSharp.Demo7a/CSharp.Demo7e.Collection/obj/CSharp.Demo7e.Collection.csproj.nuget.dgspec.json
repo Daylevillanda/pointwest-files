@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7e.Collection/CSharp.Demo7e.Collection.csproj": {}
+    "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\C#\\CSharp.Demo7a\\CSharp.Demo7e.Collection\\CSharp.Demo7e.Collection.csproj": {}
   },
   "projects": {
-    "/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7e.Collection/CSharp.Demo7e.Collection.csproj": {
+    "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\C#\\CSharp.Demo7a\\CSharp.Demo7e.Collection\\CSharp.Demo7e.Collection.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7e.Collection/CSharp.Demo7e.Collection.csproj",
+        "projectUniqueName": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\C#\\CSharp.Demo7a\\CSharp.Demo7e.Collection\\CSharp.Demo7e.Collection.csproj",
         "projectName": "CSharp.Demo7e.Collection",
-        "projectPath": "/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7e.Collection/CSharp.Demo7e.Collection.csproj",
-        "packagesPath": "/Users/vener.guevarra/.nuget/packages/",
-        "outputPath": "/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7e.Collection/obj/",
+        "projectPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\C#\\CSharp.Demo7a\\CSharp.Demo7e.Collection\\CSharp.Demo7e.Collection.csproj",
+        "packagesPath": "C:\\Users\\dayle.villanda\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\C#\\CSharp.Demo7a\\CSharp.Demo7e.Collection\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "/Users/vener.guevarra/.nuget/NuGet/NuGet.Config"
+          "C:\\Users\\dayle.villanda\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -47,12 +53,18 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[5.0.16, 5.0.16]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/6.0.201/RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "ek/e6IcXTIjB+B7FDjqgLaLh2D+STghzH4smBQf/zjk/on5GPf4hrh8vo+zA53UMdQPamal966I4GmdD3wJv7g==",
+  "dgSpecHash": "Ioeqsv9cq5bmvjvMFKuXhJ96NXT9lfC9vsiJgNzlC7c9xlJ6xSEasvt+QIQItbHxPL/kNkejh6n4EiYvmhkjTA==",
   "success": true,
-  "projectFilePath": "/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7a/CSharp.Demo7a.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\C#\\CSharp.Demo7a\\CSharp.Demo7a\\CSharp.Demo7a.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
   "logs": []
 }

@@ -1,19 +1,21 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 25.0.1700.0
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Demo7a", "CSharp.Demo7a\CSharp.Demo7a.csproj", "{7304DB6C-AD6B-4E31-8952-1A705419F4AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Demo7a", "CSharp.Demo7a\CSharp.Demo7a.csproj", "{7304DB6C-AD6B-4E31-8952-1A705419F4AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Demo7b", "CSharp.Demo7b\CSharp.Demo7b.csproj", "{E3B1CB34-7ACD-48B4-A446-0326CBF574A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Demo7b", "CSharp.Demo7b\CSharp.Demo7b.csproj", "{E3B1CB34-7ACD-48B4-A446-0326CBF574A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Demo7c", "CSharp.Demo7c\CSharp.Demo7c.csproj", "{956E7CD1-89FE-4DF7-9A0C-B0BA22CC01CF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Demo7c", "CSharp.Demo7c\CSharp.Demo7c.csproj", "{956E7CD1-89FE-4DF7-9A0C-B0BA22CC01CF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Demo7d.Collection", "CSharp.Demo7d.Collection\CSharp.Demo7d.Collection.csproj", "{8D30FF0E-3C52-435B-9754-91F3123E3223}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Demo7d.Collection", "CSharp.Demo7d.Collection\CSharp.Demo7d.Collection.csproj", "{8D30FF0E-3C52-435B-9754-91F3123E3223}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Demo7e.Collection", "CSharp.Demo7e.Collection\CSharp.Demo7e.Collection.csproj", "{DF7BDC7E-67F9-4855-AA8F-8BC6F8ED5E57}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Demo7e.Collection", "CSharp.Demo7e.Collection\CSharp.Demo7e.Collection.csproj", "{DF7BDC7E-67F9-4855-AA8F-8BC6F8ED5E57}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Demo7f.Collection", "CSharp.Demo7f.Collection\CSharp.Demo7f.Collection.csproj", "{4C1D79BA-F4DD-43E2-A778-5C6719AD03ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CSharp.Demo7f.Collection", "CSharp.Demo7f.Collection\CSharp.Demo7f.Collection.csproj", "{4C1D79BA-F4DD-43E2-A778-5C6719AD03ED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp.Demo7g.Collection", "CSharp.Demo7g.Collection\CSharp.Demo7g.Collection.csproj", "{DE4D4861-C507-4A30-A476-9D66FF96AFED}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{4C1D79BA-F4DD-43E2-A778-5C6719AD03ED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4C1D79BA-F4DD-43E2-A778-5C6719AD03ED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4C1D79BA-F4DD-43E2-A778-5C6719AD03ED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DE4D4861-C507-4A30-A476-9D66FF96AFED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DE4D4861-C507-4A30-A476-9D66FF96AFED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DE4D4861-C507-4A30-A476-9D66FF96AFED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DE4D4861-C507-4A30-A476-9D66FF96AFED}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

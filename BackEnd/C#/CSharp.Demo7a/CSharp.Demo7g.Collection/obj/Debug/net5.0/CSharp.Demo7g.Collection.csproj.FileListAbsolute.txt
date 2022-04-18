@@ -1,0 +1,16 @@
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\bin\Debug\net5.0\CSharp.Demo7g.Collection.exe
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\bin\Debug\net5.0\CSharp.Demo7g.Collection.deps.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\bin\Debug\net5.0\CSharp.Demo7g.Collection.runtimeconfig.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\bin\Debug\net5.0\CSharp.Demo7g.Collection.runtimeconfig.dev.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\bin\Debug\net5.0\CSharp.Demo7g.Collection.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\bin\Debug\net5.0\CSharp.Demo7g.Collection.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\obj\Debug\net5.0\CSharp.Demo7g.Collection.csproj.AssemblyReference.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\obj\Debug\net5.0\CSharp.Demo7g.Collection.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\obj\Debug\net5.0\CSharp.Demo7g.Collection.AssemblyInfoInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\obj\Debug\net5.0\CSharp.Demo7g.Collection.AssemblyInfo.cs
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\obj\Debug\net5.0\CSharp.Demo7g.Collection.csproj.CoreCompileInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\obj\Debug\net5.0\CSharp.Demo7g.Collection.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\obj\Debug\net5.0\refint\CSharp.Demo7g.Collection.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\obj\Debug\net5.0\CSharp.Demo7g.Collection.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\obj\Debug\net5.0\CSharp.Demo7g.Collection.genruntimeconfig.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\CSharp.Demo7a\CSharp.Demo7g.Collection\obj\Debug\net5.0\ref\CSharp.Demo7g.Collection.dll
