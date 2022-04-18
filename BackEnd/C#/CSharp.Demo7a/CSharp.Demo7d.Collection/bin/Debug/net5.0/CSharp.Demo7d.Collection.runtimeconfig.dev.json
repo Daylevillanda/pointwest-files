@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "/Users/vener.guevarra/.dotnet/store/|arch|/|tfm|",
+      "/Users/vener.guevarra/.nuget/packages"
+    ]
+  }
+}

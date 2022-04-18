@@ -1,0 +1,16 @@
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/bin/Debug/net5.0/CSharp.Demo7c
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/bin/Debug/net5.0/CSharp.Demo7c.deps.json
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/bin/Debug/net5.0/CSharp.Demo7c.runtimeconfig.json
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/bin/Debug/net5.0/CSharp.Demo7c.runtimeconfig.dev.json
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/bin/Debug/net5.0/CSharp.Demo7c.dll
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/bin/Debug/net5.0/CSharp.Demo7c.pdb
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/obj/Debug/net5.0/CSharp.Demo7c.csproj.AssemblyReference.cache
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/obj/Debug/net5.0/CSharp.Demo7c.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/obj/Debug/net5.0/CSharp.Demo7c.AssemblyInfoInputs.cache
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/obj/Debug/net5.0/CSharp.Demo7c.AssemblyInfo.cs
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/obj/Debug/net5.0/CSharp.Demo7c.csproj.CoreCompileInputs.cache
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/obj/Debug/net5.0/CSharp.Demo7c.dll
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/obj/Debug/net5.0/refint/CSharp.Demo7c.dll
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/obj/Debug/net5.0/CSharp.Demo7c.pdb
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/obj/Debug/net5.0/CSharp.Demo7c.genruntimeconfig.cache
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7c/obj/Debug/net5.0/ref/CSharp.Demo7c.dll

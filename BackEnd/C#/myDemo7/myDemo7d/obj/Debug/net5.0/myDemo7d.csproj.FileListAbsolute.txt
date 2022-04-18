@@ -1,0 +1,16 @@
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\bin\Debug\net5.0\myDemo7d.exe
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\bin\Debug\net5.0\myDemo7d.deps.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\bin\Debug\net5.0\myDemo7d.runtimeconfig.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\bin\Debug\net5.0\myDemo7d.runtimeconfig.dev.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\bin\Debug\net5.0\myDemo7d.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\bin\Debug\net5.0\myDemo7d.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\obj\Debug\net5.0\myDemo7d.csproj.AssemblyReference.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\obj\Debug\net5.0\myDemo7d.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\obj\Debug\net5.0\myDemo7d.AssemblyInfoInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\obj\Debug\net5.0\myDemo7d.AssemblyInfo.cs
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\obj\Debug\net5.0\myDemo7d.csproj.CoreCompileInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\obj\Debug\net5.0\myDemo7d.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\obj\Debug\net5.0\refint\myDemo7d.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\obj\Debug\net5.0\myDemo7d.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\obj\Debug\net5.0\myDemo7d.genruntimeconfig.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7d\obj\Debug\net5.0\ref\myDemo7d.dll

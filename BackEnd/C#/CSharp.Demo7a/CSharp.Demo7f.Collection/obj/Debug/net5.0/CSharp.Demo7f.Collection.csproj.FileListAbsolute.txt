@@ -1,0 +1,16 @@
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/bin/Debug/net5.0/CSharp.Demo7f.Collection
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/bin/Debug/net5.0/CSharp.Demo7f.Collection.deps.json
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/bin/Debug/net5.0/CSharp.Demo7f.Collection.runtimeconfig.json
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/bin/Debug/net5.0/CSharp.Demo7f.Collection.runtimeconfig.dev.json
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/bin/Debug/net5.0/CSharp.Demo7f.Collection.dll
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/bin/Debug/net5.0/CSharp.Demo7f.Collection.pdb
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/obj/Debug/net5.0/CSharp.Demo7f.Collection.csproj.AssemblyReference.cache
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/obj/Debug/net5.0/CSharp.Demo7f.Collection.GeneratedMSBuildEditorConfig.editorconfig
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/obj/Debug/net5.0/CSharp.Demo7f.Collection.AssemblyInfoInputs.cache
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/obj/Debug/net5.0/CSharp.Demo7f.Collection.AssemblyInfo.cs
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/obj/Debug/net5.0/CSharp.Demo7f.Collection.csproj.CoreCompileInputs.cache
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/obj/Debug/net5.0/CSharp.Demo7f.Collection.dll
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/obj/Debug/net5.0/refint/CSharp.Demo7f.Collection.dll
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/obj/Debug/net5.0/CSharp.Demo7f.Collection.pdb
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/obj/Debug/net5.0/CSharp.Demo7f.Collection.genruntimeconfig.cache
+/Users/vener.guevarra/Projects/CSharp.Demo7a/CSharp.Demo7f.Collection/obj/Debug/net5.0/ref/CSharp.Demo7f.Collection.dll

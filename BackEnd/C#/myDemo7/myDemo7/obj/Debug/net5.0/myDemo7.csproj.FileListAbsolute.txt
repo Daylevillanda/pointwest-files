@@ -1,0 +1,16 @@
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\bin\Debug\net5.0\myDemo7.exe
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\bin\Debug\net5.0\myDemo7.deps.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\bin\Debug\net5.0\myDemo7.runtimeconfig.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\bin\Debug\net5.0\myDemo7.runtimeconfig.dev.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\bin\Debug\net5.0\myDemo7.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\bin\Debug\net5.0\myDemo7.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\obj\Debug\net5.0\myDemo7.csproj.AssemblyReference.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\obj\Debug\net5.0\myDemo7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\obj\Debug\net5.0\myDemo7.AssemblyInfoInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\obj\Debug\net5.0\myDemo7.AssemblyInfo.cs
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\obj\Debug\net5.0\myDemo7.csproj.CoreCompileInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\obj\Debug\net5.0\myDemo7.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\obj\Debug\net5.0\refint\myDemo7.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\obj\Debug\net5.0\myDemo7.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\obj\Debug\net5.0\myDemo7.genruntimeconfig.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo7\myDemo7\obj\Debug\net5.0\ref\myDemo7.dll
