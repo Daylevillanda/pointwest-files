@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/Qfs21/8PImzM75zash8QTtoIUqSwRopBckrGCoeQ7b0x1Ws+ZAQ3fDIzPQBlBw93tGEtLk3y6pTb3V98rXWJg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\C#\\myDemo8\\myDemo8\\myDemo8.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}
