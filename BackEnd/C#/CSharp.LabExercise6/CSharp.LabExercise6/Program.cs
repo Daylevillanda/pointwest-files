@@ -5,7 +5,7 @@ namespace CSharp.LabExercise6
 {
     class Validations
     {
-        public static bool HasWhitespace(string text)
+        public static bool HasNoWhitespace(string text)
         {
             foreach (char ch in text)
             {
@@ -33,10 +33,10 @@ namespace CSharp.LabExercise6
     }
     class Letters
     {
-        public Dictionary<int, string> letterWithValue { get; set; }
+        public Dictionary<int, string> LetterWithValue { get; set; }
         public Letters()
         {
-            letterWithValue = new Dictionary<int, string>()
+            LetterWithValue = new Dictionary<int, string>()
             {
                 {1, "AEIOULNRST" },
                 {2, "DG" },
@@ -51,7 +51,7 @@ namespace CSharp.LabExercise6
 
     class Scrabble
     {
-        Letters letters;
+        readonly Letters letters;
         public Scrabble()
         {
             this.letters = new Letters();
@@ -66,11 +66,11 @@ namespace CSharp.LabExercise6
                 string inputWord = Console.ReadLine();
                 int points = 0;
 
-                if (Validations.HasWhitespace(inputWord) && Validations.IsValidLetter(inputWord))
+                if (Validations.HasNoWhitespace(inputWord) && Validations.IsValidLetter(inputWord))
                 {
                     foreach (char ch in inputWord.ToUpper())
                     {
-                        foreach (KeyValuePair<int, string> pair in this.letters.letterWithValue)
+                        foreach (KeyValuePair<int, string> pair in this.letters.LetterWithValue)
                         {
                             if (pair.Value.Contains(ch))
                             {
@@ -78,7 +78,7 @@ namespace CSharp.LabExercise6
                             }
                         }
                     }
-                    Console.WriteLine($"\"{inputWord}\" word is worth {points} points");
+                    Console.WriteLine($"The \"{inputWord}\" word is worth {points} points");
                 }
 
                 Console.Write("Do you want to continue(y/n)? ");
@@ -91,7 +91,7 @@ namespace CSharp.LabExercise6
     {
         static void Main(string[] args)
         {
-            Scrabble scrabble = new Scrabble();
+            Scrabble scrabble = new();
             scrabble.Start();
         }
     }
