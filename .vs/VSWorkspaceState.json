@@ -2,10 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\BackEnd",
-    "\\BackEnd\\C#",
-    "\\BackEnd\\C#\\CSharp.Demo10a",
-    "\\BackEnd\\C#\\CSharp.LabExercise6\\CSharp.LabExercise6"
+    "\\BackEnd\\C#"
   ],
-  "SelectedNode": "\\BackEnd\\C#\\CSharp.Demo10a\\CSharp.Demo10a.sln",
+  "SelectedNode": "\\BackEnd\\C#\\CSharp.Demo10a",
   "PreviewInSolutionExplorer": false
 }
