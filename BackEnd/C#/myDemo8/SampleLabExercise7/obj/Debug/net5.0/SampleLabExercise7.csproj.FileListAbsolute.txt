@@ -1,0 +1,16 @@
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\bin\Debug\net5.0\SampleLabExercise7.exe
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\bin\Debug\net5.0\SampleLabExercise7.deps.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\bin\Debug\net5.0\SampleLabExercise7.runtimeconfig.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\bin\Debug\net5.0\SampleLabExercise7.runtimeconfig.dev.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\bin\Debug\net5.0\SampleLabExercise7.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\bin\Debug\net5.0\SampleLabExercise7.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\obj\Debug\net5.0\SampleLabExercise7.csproj.AssemblyReference.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\obj\Debug\net5.0\SampleLabExercise7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\obj\Debug\net5.0\SampleLabExercise7.AssemblyInfoInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\obj\Debug\net5.0\SampleLabExercise7.AssemblyInfo.cs
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\obj\Debug\net5.0\SampleLabExercise7.csproj.CoreCompileInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\obj\Debug\net5.0\SampleLabExercise7.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\obj\Debug\net5.0\refint\SampleLabExercise7.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\obj\Debug\net5.0\SampleLabExercise7.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\obj\Debug\net5.0\SampleLabExercise7.genruntimeconfig.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\myDemo8\SampleLabExercise7\obj\Debug\net5.0\ref\SampleLabExercise7.dll

@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v5.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v5.0": {
+      "SampleLabExercise7/1.0.0": {
+        "runtime": {
+          "SampleLabExercise7.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "SampleLabExercise7/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

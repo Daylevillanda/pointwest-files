@@ -1,0 +1,16 @@
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\bin\Debug\net5.0\LabEx7.exe
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\bin\Debug\net5.0\LabEx7.deps.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\bin\Debug\net5.0\LabEx7.runtimeconfig.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\bin\Debug\net5.0\LabEx7.runtimeconfig.dev.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\bin\Debug\net5.0\LabEx7.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\bin\Debug\net5.0\LabEx7.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\obj\Debug\net5.0\LabEx7.csproj.AssemblyReference.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\obj\Debug\net5.0\LabEx7.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\obj\Debug\net5.0\LabEx7.AssemblyInfoInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\obj\Debug\net5.0\LabEx7.AssemblyInfo.cs
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\obj\Debug\net5.0\LabEx7.csproj.CoreCompileInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\obj\Debug\net5.0\LabEx7.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\obj\Debug\net5.0\refint\LabEx7.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\obj\Debug\net5.0\LabEx7.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\obj\Debug\net5.0\LabEx7.genruntimeconfig.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\C#\LabEx7\LabEx7\obj\Debug\net5.0\ref\LabEx7.dll
