@@ -30,11 +30,13 @@ namespace EntityFramework.Demo1a.Migrations
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Name = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Price = table.Column<decimal>(type: "DECIMAL(11,2)", nullable: false)
+                    Price = table.Column<decimal>(type: "DECIMAL(11,2)", nullable: false),
+                    ProductCode = table.Column<string>(type: "nvarchar(100)", nullable: true)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Products", x => x.Id);
+                    table.UniqueConstraint(name: "UNQ_PC", x => x.ProductCode);
                 });
 
             migrationBuilder.CreateTable(
@@ -99,6 +101,8 @@ namespace EntityFramework.Demo1a.Migrations
                 name: "IX_ProductOrders_ProductId",
                 table: "ProductOrders",
                 column: "ProductId");
+
+            //migrationBuilder.AddUniqueConstraint(name: "UNQ_ProdutCode", table: "Products", column: "ProductCode");
         }
 
         protected override void Down(MigrationBuilder migrationBuilder)

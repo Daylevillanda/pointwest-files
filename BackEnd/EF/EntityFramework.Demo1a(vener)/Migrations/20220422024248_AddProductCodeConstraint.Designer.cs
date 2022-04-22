@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace EntityFramework.Demo1a.Migrations
 {
     [DbContext(typeof(OnlineShopContext))]
-    [Migration("20220421065920_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20220422024248_AddProductCodeConstraint")]
+    partial class AddProductCodeConstraint
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -31,8 +31,11 @@ namespace EntityFramework.Demo1a.Migrations
                     b.Property<string>("Address")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<string>("FirstName")
+                    b.Property<string>("Email")
                         .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FirstName")
+                        .HasColumnType("VARCHAR(50)");
 
                     b.Property<string>("LastName")
                         .HasColumnType("nvarchar(max)");
@@ -76,10 +79,14 @@ namespace EntityFramework.Demo1a.Migrations
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
                     b.Property<string>("Name")
+                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<decimal>("Price")
                         .HasColumnType("DECIMAL(11,2)");
+
+                    b.Property<string>("ProductCode")
+                        .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
 
@@ -108,7 +115,7 @@ namespace EntityFramework.Demo1a.Migrations
 
                     b.HasIndex("ProductId");
 
-                    b.ToTable("ProductOrders");
+                    b.ToTable("ProductOders");
                 });
 
             modelBuilder.Entity("EntityFramework.Demo1a.Models.Order", b =>

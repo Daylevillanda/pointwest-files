@@ -79,6 +79,9 @@ namespace EntityFramework.Demo1a.Migrations
                     b.Property<decimal>("Price")
                         .HasColumnType("DECIMAL(11,2)");
 
+                    b.Property<string>("ProductCode")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.ToTable("Products");

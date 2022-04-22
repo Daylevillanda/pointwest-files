@@ -18,5 +18,6 @@ namespace EntityFramework.Demo1a.Models
         [Column(TypeName = "DECIMAL(11, 2)")]
         [Required]
         public decimal Price { get; set; }
+        public string ProductCode { get; set; }
     }
 }
