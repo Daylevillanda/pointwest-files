@@ -4,6 +4,7 @@ using EntityFramework.Demo1a.Models;
 using System.Linq;
 using System.Collections.Generic;
 using Microsoft.EntityFrameworkCore;
+using EntityFramework.Demo1a.Repositories;
 
 namespace EntityFramework.Demo1a
 {
@@ -111,15 +112,39 @@ namespace EntityFramework.Demo1a
         }
         static void Main(string[] args)
         {
-           using(OnlineShopContext context = new OnlineShopContext())
-           {
-                //AddProducts(context);
-                //DisplayProducts(GetProductsByLinq(context));
-                //DisplayProducts(GetProductsByQueryApi(context));
-                //UpdateProduct(1, 500, context);
-                //DeleteProduct(1, context);
+            //using (OnlineShopContext context = new OnlineShopContext())
+            //{
+            //    //AddProducts(context);
+            //    //DisplayProducts(GetProductsByLinq(context));
+            //    //DisplayProducts(GetProductsByQueryApi(context));
+            //    //UpdateProduct(1, 500, context);
+            //    //DeleteProduct(1, context);
+            //}
+            //Console.WriteLine("Transaction committed successfully");
+
+            using (OnlineShopContext context = new OnlineShopContext())
+            {
+                ProductRepository productRepository = ProductRepository.Instance(context);
+                try
+                {
+                    //var existingProduct = productRepository.FindByCode("P0001");
+                    //existingProduct.Price = 1214124;
+
+                    //productRepository.Update(existingProduct);
+                    //Console.WriteLine("Product successfully updated");
+                    var iphone = new Product
+                    {
+                        Name = "iPhone 14",
+                        Price = 150_000M,
+                        ProductCode = "P0004"
+                    };
+                    productRepository.Insert(iphone);
+                }
+                catch (Exception ex)
+                {
+                    Console.WriteLine(ex.Message);
+                }
             }
-           Console.WriteLine("Transaction committed successfully");
         }
     }
 }
