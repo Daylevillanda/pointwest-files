@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a\\EntityFramework.Demo1a.csproj": {}
+    "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a(myDemo)\\EntityFramework.Demo1a.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a\\EntityFramework.Demo1a.csproj": {
+    "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a(myDemo)\\EntityFramework.Demo1a.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a\\EntityFramework.Demo1a.csproj",
+        "projectUniqueName": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a(myDemo)\\EntityFramework.Demo1a.csproj",
         "projectName": "EntityFramework.Demo1a",
-        "projectPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a\\EntityFramework.Demo1a.csproj",
+        "projectPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a(myDemo)\\EntityFramework.Demo1a.csproj",
         "packagesPath": "C:\\Users\\dayle.villanda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a\\obj\\",
+        "outputPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a(myDemo)\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

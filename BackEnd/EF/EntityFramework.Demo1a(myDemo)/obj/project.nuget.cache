@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "1iyU0uQKEGJtIsseCOefaGNc9UDOJNS62xHCJzaKFdaeiecDOny1fUfxaGm5r32ZQrpuKvHjVCvBQXT4UwUJUA==",
+  "dgSpecHash": "twcDnaN7HskkStLrEmOtHt1LyLimPKYBsnGQLraFCIQy0ANRy1cmC31481+hcTDuc5FKN3GAbSp/EvgEAv3FFw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a\\EntityFramework.Demo1a.csproj",
+  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a(myDemo)\\EntityFramework.Demo1a.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dayle.villanda\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

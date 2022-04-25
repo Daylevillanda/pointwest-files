@@ -5797,23 +5797,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Rojen Abuyen\\.nuget\\packages\\": {},
+    "C:\\Users\\dayle.villanda\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Rojen Abuyen\\source\\repos\\EntityFramework.Demo1a\\EntityFramework.Demo1a.csproj",
+      "projectUniqueName": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a(venerUpdated)\\EntityFramework.Demo1a.csproj",
       "projectName": "EntityFramework.Demo1a",
-      "projectPath": "C:\\Users\\Rojen Abuyen\\source\\repos\\EntityFramework.Demo1a\\EntityFramework.Demo1a.csproj",
-      "packagesPath": "C:\\Users\\Rojen Abuyen\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Rojen Abuyen\\source\\repos\\EntityFramework.Demo1a\\obj\\",
+      "projectPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a(venerUpdated)\\EntityFramework.Demo1a.csproj",
+      "packagesPath": "C:\\Users\\dayle.villanda\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a(venerUpdated)\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Rojen Abuyen\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dayle.villanda\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5867,12 +5867,18 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
+        "downloadDependencies": [
+          {
+            "name": "Microsoft.NETCore.App.Host.win-x64",
+            "version": "[5.0.16, 5.0.16]"
+          }
+        ],
         "frameworkReferences": {
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.201\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
       }
     }
   }
