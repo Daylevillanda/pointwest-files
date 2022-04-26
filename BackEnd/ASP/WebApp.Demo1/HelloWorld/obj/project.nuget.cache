@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "uYoTwLr9JVO0uUd0sFL3t67RG8ilsuS3hVm2yZ+Nm1Z/tWX6AYrpUTjgv6DMsBe9qAndfyUgjsW2D1uFOA+zgw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\ASP\\WebApp.Demo1\\HelloWorld\\HelloWorld.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

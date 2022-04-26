@@ -11,10 +11,13 @@ namespace EntityFrameworkDemo.Data
     {
         Task CommitAsync();
 
+        public void Commit();
+
         public IProductRepository ProductRepository { get; }
         public ICustomerRepository CustomerRepository { get; }
         public IProductOrderRepository ProductOrderRepository { get; }
         public IOrderRepository OrderRepository { get; }
+        public IAccountRepository AccountRepository { get; }
     }
 
     public class UnitOfWork : IUnitOfWork, IDisposable
@@ -26,6 +29,7 @@ namespace EntityFrameworkDemo.Data
         public ICustomerRepository CustomerRepository { get; private set; }
         public IProductOrderRepository ProductOrderRepository { get; private set; }
         public IOrderRepository OrderRepository { get; private set; }
+        public IAccountRepository AccountRepository { get; private set; }
 
         public UnitOfWork(OnlineShopContext context)
         {
@@ -34,6 +38,12 @@ namespace EntityFrameworkDemo.Data
             this.CustomerRepository = new CustomerRepository(context);
             this.ProductOrderRepository = new ProductOrderRepository(context);
             this.OrderRepository = new OrderRepository(context);
+            this.AccountRepository = new AccountRepository(context);
+        }
+
+        public void Commit()
+        {
+            this.context.SaveChanges();
         }
 
         public async Task CommitAsync()
