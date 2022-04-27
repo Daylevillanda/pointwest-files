@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ASPDotNeMVC.Demo1", "ASPDotNeMVC.Demo1\ASPDotNeMVC.Demo1.csproj", "{D2E15D4F-C91E-45B2-A55C-BF54853C81D9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D2E15D4F-C91E-45B2-A55C-BF54853C81D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D2E15D4F-C91E-45B2-A55C-BF54853C81D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D2E15D4F-C91E-45B2-A55C-BF54853C81D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D2E15D4F-C91E-45B2-A55C-BF54853C81D9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {2D2DB3B0-3EEE-444C-B23B-5EC82BEE3DFF}
+	EndGlobalSection
+EndGlobal

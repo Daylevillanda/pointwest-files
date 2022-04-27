@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "zbl6WIge5LyUZHiFEfdoRzj2xcDZs4Xu++JD7BlATMvIoqDXuV/Soi0H6j4L1vp2KOjFmildwzo04tecyL4BzA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\ASP\\ASPDotNeMVC.Demo1\\ASPDotNeMVC.Demo1\\ASPDotNeMVC.Demo1.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

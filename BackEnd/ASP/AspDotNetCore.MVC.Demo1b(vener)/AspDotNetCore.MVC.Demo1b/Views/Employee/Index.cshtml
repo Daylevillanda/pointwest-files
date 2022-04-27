@@ -1,0 +1,47 @@
+﻿@using AspDotNetCore.MVC.Demo1b.Configuration;
+@using System.Collections.Generic;
+@using AspDotNetCore.MVC.Demo1b.Models;
+@{
+    var emailSettings = ViewData["EmailSettings"] as EmailSettings;
+    var employeeList = ViewData["EmployeeList"] as List<Employee>;
+}
+
+<div>
+    <h2>Employee List</h2>
+    <table>
+        <tr>
+            <td>Email</td>
+             <td>@emailSettings.SMTPEmail</td>
+            <td>Password</td>
+             <td>@emailSettings.SMTPPassword</td>
+            <td>Port</td>
+             <td>@emailSettings.SMTPPort</td>
+            <td>Host</td>
+             <td>@emailSettings.SMTPHost</td>
+        </tr>
+    </table>
+</div>
+
+<br/>
+<hr/>
+
+<table cellpadding="10" cellspacing="10">
+    <tr>
+        <td>Id</td>
+        <td>First Name</td>
+        <td>Last Name</td>
+        <td>Salary</td>
+        <td>Position</td>
+    </tr>
+    @foreach(var employee in employeeList)
+    {
+        <tr>
+            <td>@employee.Id</td>
+            <td>@employee.FirstName</td>
+            <td>@employee.LastName</td>
+            <td>@employee.Salary</td>
+            <td>@employee.Position</td>
+        </tr>
+    }
+</table>
+
