@@ -1,0 +1,11 @@
+﻿@using Microsoft.AspNetCore.Http
+
+@{
+    ViewBag.Title = "Dashboard";
+}
+
+<h3>Success Page</h3>
+Welcome @Context.Session.GetString("usernames")
+<br>
+<a href="@Url.Action("Logout", "Account")">Logout</a>
+

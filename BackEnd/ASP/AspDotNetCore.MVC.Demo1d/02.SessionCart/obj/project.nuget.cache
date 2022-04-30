@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "AU0lw1K1xe5TSLsE/fWTaCCqW+0LjLytYfiam45bBanZ86/UifrU5rE0Drb4N8vxSiMSkf+8b/Jf5Cf3ebyifg==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\ASP\\AspDotNetCore.MVC.Demo1d\\02.SessionCart\\02.SessionCart.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dayle.villanda\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
+    "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

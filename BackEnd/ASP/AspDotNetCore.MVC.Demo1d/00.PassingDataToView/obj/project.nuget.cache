@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "7GKss97/jOpbsn0mYmwIBRSHMpiNaxzQs9qFPDhFV3r/xXPqmr9s+bt3e/HwlsWfEmGOSibbel1FlW04wS7/BQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\ASP\\AspDotNetCore.MVC.Demo1d\\00.PassingDataToView\\00.PassingDataToView.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,22 @@
+﻿@using CustomerData.Models
+
+@{
+    var customer = ViewData["customer"] as Customer;
+}
+
+
+<p>
+    Id: @customer.Id
+</p>
+<p>
+    FirstName: @customer.FirstName
+</p>
+<p>
+    LastName: @customer.LastName
+</p>
+<p>
+    Address: @customer.Address
+</p>
+<p>
+    Phone: @customer.Phone
+</p>

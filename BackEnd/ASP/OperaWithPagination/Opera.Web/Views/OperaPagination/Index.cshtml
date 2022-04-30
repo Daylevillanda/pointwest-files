@@ -1,0 +1,57 @@
+﻿@using Operas.Data.Models;
+@using Operas.Web.Models;
+
+@model PagedResult<OperaEntity>;
+
+<h4>Operas</h4>
+<hr />
+<form asp-action="Index" asp-controller="OperaPagination" method="post">
+    <table class="table table-striped">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Title</th>
+            <th scope="col">Year</th>
+            <th scope="col">Composers</th>
+            <td scope="col">Action</td>
+        </tr>
+        @foreach (var opera in Model.Results)
+        {
+            <tr>
+                <td scope="row">@opera.Id</td>
+                <td>@opera.Title</td>
+                <td>@opera.Year</td>
+                <td>@opera.Composer</td>
+                <td> @Html.ActionLink("Details", "Details", "Opera", new { id=opera.Id })</td>
+            </tr>
+        }
+    </table>
+    <br />
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            @for (int pageIndex = 1; pageIndex <= Model.PageCount; pageIndex++)
+            {
+
+                @if (pageIndex != Model.CurrentPage)
+                {
+
+                    <li class="page-item"><a class="page-link" href="javascript:pagerClick(@pageIndex);">@pageIndex</a></li>
+                }
+                else
+                {
+                    <li class="page-item active">
+                        <a class="page-link" href="#">@pageIndex <span class="sr-only">(current)</span></a>
+                    </li>
+                }
+
+            }
+        </ul>
+    </nav>
+    <input type="hidden" id="currentPageIndex" name="currentPageIndex" />
+</form>
+<script type="text/javascript">
+    function pagerClick(index) {
+        document.getElementById("currentPageIndex").value = index;
+        document.forms[0].submit();
+    }
+</script>

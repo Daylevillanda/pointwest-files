@@ -1,0 +1,15 @@
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\bin\Debug\net5.0\CustomerData.deps.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\bin\Debug\net5.0\CustomerData.runtimeconfig.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\bin\Debug\net5.0\CustomerData.runtimeconfig.dev.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\bin\Debug\net5.0\CustomerData.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\bin\Debug\net5.0\CustomerData.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\obj\Debug\net5.0\CustomerData.csproj.AssemblyReference.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\obj\Debug\net5.0\CustomerData.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\obj\Debug\net5.0\CustomerData.AssemblyInfoInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\obj\Debug\net5.0\CustomerData.AssemblyInfo.cs
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\obj\Debug\net5.0\CustomerData.csproj.CoreCompileInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\obj\Debug\net5.0\CustomerData.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\obj\Debug\net5.0\refint\CustomerData.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\obj\Debug\net5.0\CustomerData.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\obj\Debug\net5.0\CustomerData.genruntimeconfig.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.CRUD.LabExercise\CustomerData\obj\Debug\net5.0\ref\CustomerData.dll

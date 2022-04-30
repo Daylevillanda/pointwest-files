@@ -1,0 +1,9 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<h3>URL Parameters</h3>
+<a href="@Url.Action("Demo1", "Demo", new { id = "p01" })">One Parameter</a>
+<br />
+<a href="@Url.Action("Demo2", "Demo", new { id = 4, id2 = 7 })">Multiple Parameters</a>
+

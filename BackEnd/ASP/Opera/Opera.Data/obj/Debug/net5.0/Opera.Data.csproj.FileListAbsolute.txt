@@ -1,0 +1,15 @@
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\bin\Debug\net5.0\Opera.Data.deps.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\bin\Debug\net5.0\Opera.Data.runtimeconfig.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\bin\Debug\net5.0\Opera.Data.runtimeconfig.dev.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\bin\Debug\net5.0\Opera.Data.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\bin\Debug\net5.0\Opera.Data.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\obj\Debug\net5.0\Opera.Data.csproj.AssemblyReference.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\obj\Debug\net5.0\Opera.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\obj\Debug\net5.0\Opera.Data.AssemblyInfoInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\obj\Debug\net5.0\Opera.Data.AssemblyInfo.cs
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\obj\Debug\net5.0\Opera.Data.csproj.CoreCompileInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\obj\Debug\net5.0\Opera.Data.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\obj\Debug\net5.0\refint\Opera.Data.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\obj\Debug\net5.0\Opera.Data.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\obj\Debug\net5.0\Opera.Data.genruntimeconfig.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\Opera\Opera.Data\obj\Debug\net5.0\ref\Opera.Data.dll

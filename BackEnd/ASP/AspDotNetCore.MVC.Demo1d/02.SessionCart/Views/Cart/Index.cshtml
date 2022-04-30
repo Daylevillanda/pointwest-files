@@ -1,0 +1,45 @@
+﻿@using _02.SessionCart.Models
+@using _02.SessionCart.Extensions
+@using Microsoft.AspNetCore.Http
+
+@{
+    ViewBag.Title = "Cart";
+}
+
+<h3>Cart Page</h3>
+<table cellpadding="2" cellspacing="2" border="1">
+    <tr>
+        <th>Option</th>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Photo</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Sub Total</th>
+    </tr>
+    @foreach (Item item in @Context.Session.GetObject<List<Item>>("cart"))
+    {
+        <tr>
+            <td><a href="@Url.Action("Remove", "Cart", new { id = item.Product.Id })">Remove</a></td>
+            <td>@item.Product.Id</td>
+            <td>@item.Product.Name</td>
+            <td><img src="~/images/@item.Product.Photo" width="60" /> </td>
+            <td>@item.Product.Price</td>
+            <td>@item.Quantity</td>
+            <td>@(item.Product.Price * item.Quantity)</td>
+        </tr>
+    }
+    <tr>
+        <td align="right" colspan="6">Sum</td>
+        <td>
+            @{
+                List<Item> cart = Context.Session.GetObject<List<Item>>("cart");
+                var total = cart.Sum(item => item.Product.Price * item.Quantity);
+            }
+            @total
+        </td>
+    </tr>
+</table>
+<br>
+<a href="@Url.Action("Index", "Product")">Continue Shopping</a>
+

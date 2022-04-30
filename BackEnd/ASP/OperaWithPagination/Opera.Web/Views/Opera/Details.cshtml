@@ -1,0 +1,23 @@
+﻿@using Operas.Data.Models
+
+@{
+    var opera = ViewData["Opera"] as OperaEntity;
+}
+
+<br/>
+@Html.ActionLink("Back", "Index", "OperaPagination", new { id=opera.Id })
+<br/>
+
+<p>
+    Id: @opera.Id
+</p>
+<p>
+    Title: @opera.Title
+</p>
+<p>
+    Year: @opera.Year
+</p>
+<p>
+    Composer: @opera.Composer
+</p>
+

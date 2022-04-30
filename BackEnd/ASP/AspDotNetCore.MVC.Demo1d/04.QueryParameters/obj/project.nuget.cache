@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "xEbo/j1Shhf+syDa4OiZ4hfWY4qA97O3OG1dpZ2Yl+ZQpIDtBBohqVQDxutv7A2uR/5pPy+diNwnprfR7hYaeA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\ASP\\AspDotNetCore.MVC.Demo1d\\04.QueryParameters\\04.QueryParameters.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+  ],
+  "logs": []
+}

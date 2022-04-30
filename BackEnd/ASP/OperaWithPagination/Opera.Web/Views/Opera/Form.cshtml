@@ -1,0 +1,51 @@
+﻿@model Operas.Data.Models.OperaEntity
+
+@{
+    var action = ViewData["Action"];
+}
+
+    <h3>@action Opera</h3>
+    <form asp-controller="opera" asp-action="save" method="post">
+        @Html.Hidden("action",action)
+        <table border="0" cellpadding="2" cellspacing="2">
+            @if (action != null && action.ToString().ToLower().Equals("edit"))
+            {
+                <input asp-for="Id" type="hidden" />
+            } 
+            
+            <tr>
+                <td>Title</td>
+                <td>
+                    <input asp-for="Title" />
+                </td>
+                <td>
+                    <span asp-validation-for="Title" class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Year</td>
+                <td>
+                    <input asp-for="Year" type="number" />
+                </td>
+                <td>
+                    <span asp-validation-for="Year" class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>Composer</td>
+                <td>
+                    <input asp-for="Composer" />
+                </td>
+                <td>
+                    <span asp-validation-for="Composer" class="error"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;</td>
+                <td>
+                    <input type="submit" value="Save" />
+                </td>
+            </tr>
+        </table>
+    </form>
+

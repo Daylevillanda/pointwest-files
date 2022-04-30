@@ -1,0 +1,69 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<br />
+Age: @ViewBag.age
+<br />
+Full Name: @ViewBag.fullName
+<br />
+Status: @ViewBag.status
+<br />
+Price: @ViewBag.price
+<br />
+Birthday: @ViewBag.birthday.ToString("MM/dd/yyyy")
+
+<br />
+<h3>Product Info</h3>
+<table border="1" cellpadding="2" cellspacing="2">
+    <tr>
+        <td>Id</td>
+        <td>@ViewBag.product.Id</td>
+    </tr>
+    <tr>
+        <td>Name</td>
+        <td>@ViewBag.product.Name</td>
+    </tr>
+    <tr>
+        <td>Photo</td>
+        <td><img src="~/images/@ViewBag.product.Photo" width="60" /></td>
+    </tr>
+    <tr>
+        <td>Price</td>
+        <td>@ViewBag.product.Price</td>
+    </tr>
+    <tr>
+        <td>Quantity</td>
+        <td>@ViewBag.product.Quantity</td>
+    </tr>
+    <tr>
+        <td>Total</td>
+        <td>@(ViewBag.product.Price * ViewBag.product.Quantity)</td>
+    </tr>
+</table>
+
+<br />
+
+<h3>Products List</h3>
+<table border="1" cellpadding="2" cellspacing="2">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Photo</th>
+        <th>Price</th>
+        <th>Quantity</th>
+        <th>Total</th>
+    </tr>
+    @foreach (var product in ViewBag.products)
+    {
+        <tr>
+            <td>@product.Id</td>
+            <td>@product.Name</td>
+            <td><img src="~/images/@product.Photo" width="60" /></td>
+            <td>@product.Price</td>
+            <td>@product.Quantity</td>
+            <td>@(product.Price * product.Quantity)</td>
+        </tr>
+    }
+</table>
+

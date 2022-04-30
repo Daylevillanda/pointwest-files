@@ -1,0 +1,51 @@
+﻿@model IEnumerable<Operas.Data.Models.OperaEntity>
+
+@{
+    ViewBag.Title = "Operas";
+}
+
+<h2>Operas</h2>
+
+<p>
+    @Html.ActionLink("New Opera", "New")
+</p>
+@if(Model.Count() != 0)
+{
+    <table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Title)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Year)
+        </th>
+         <th>
+            @Html.DisplayNameFor(model => model.Composer)
+        </th>
+    </tr>
+
+    @foreach(var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(model => item.Title)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Year)
+            </td>
+            <td>
+                @Html.DisplayFor(model => item.Composer)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "Edit", new { id=item.Id, action="edit" }) |
+                @Html.ActionLink("Details", "Details", new { id=item.Id,  }) |
+                @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+                @Html.ActionLink("create","CreateDummyData")
+            </td>
+    </tr>
+    }
+    </table>
+} else
+{
+    <p>No operas found</p>
+}

@@ -1,0 +1,19 @@
+﻿@using Operas.Data.Models
+
+@{
+    var opera = ViewData["Opera"] as OperaEntity;
+}
+
+
+<p>
+    Id: @opera.Id
+</p>
+<p>
+    Title: @opera.Title
+</p>
+<p>
+    Year: @opera.Year
+</p>
+<p>
+    Composer: @opera.Composer
+</p>

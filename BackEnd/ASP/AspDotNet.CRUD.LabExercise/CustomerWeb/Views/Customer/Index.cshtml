@@ -1,0 +1,59 @@
+﻿@model IEnumerable<CustomerData.Models.Customer>
+
+@{
+    ViewBag.Title = "Customer";
+}
+
+<h2>Customer</h2>
+
+@if(Model.Count() > 0) @*//Model.Any()*@
+{
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FirstName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.LastName)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Address)
+            </th>
+             <th>
+                @Html.DisplayNameFor(model => model.Phone)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(model => item.FirstName)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.LastName)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Address)
+                </td>
+                <td>
+                    @Html.DisplayFor(model => item.Phone)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id=item.Id, action="edit" }) |
+                    @Html.ActionLink("Details", "Details", new { id=item.Id,  }) |
+                    @Html.ActionLink("Delete", "Delete", new { id=item.Id })
+                </td>
+            </tr>
+        }
+    </table>
+    }
+else
+{
+    <span>Customer Table is Empty</span>
+}
+
+<p>
+    @Html.ActionLink("Create New Customer", "New")
+</p>

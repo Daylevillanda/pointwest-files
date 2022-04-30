@@ -1,0 +1,28 @@
+﻿@using _02.SessionCart.Models
+@{
+    ViewBag.Title = "Product";
+}
+
+<h3>Products List</h3>
+<table cellpadding="2" cellspacing="2" border="1">
+    <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Photo</th>
+        <th>Price</th>
+        <th>Buy</th>
+    </tr>
+    @foreach (Product product in ViewBag.products)
+    {
+        <tr>
+            <td>@product.Id</td>
+            <td>@product.Name</td>
+            <td><img src="~/images/@product.Photo" width="60" /> </td>
+            <td>@product.Price</td>
+            <td align="center">
+                <a href="@Url.Action("Add", "Cart", new { id = product.Id })">Buy Now</a>
+            </td>
+        </tr>
+    }
+</table>
+

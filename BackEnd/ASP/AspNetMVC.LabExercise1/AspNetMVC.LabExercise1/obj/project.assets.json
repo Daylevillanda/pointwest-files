@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\ASP\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1.csproj",
+      "projectUniqueName": "C:\\Users\\dayle.villanda\\Documents\\Github\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1.csproj",
       "projectName": "AspNetMVC.LabExercise1",
-      "projectPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\ASP\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1.csproj",
+      "projectPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1.csproj",
       "packagesPath": "C:\\Users\\dayle.villanda\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\ASP\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1\\obj\\",
+      "outputPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

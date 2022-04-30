@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "W5mow7xDx+wPViiVQzjcsMqj//YrQ/rlv6Qsp20zdulEwtF9n+fg1OwgEJ3LWaERD4MG3f3YhmgHf9oHETVd1g==",
+  "dgSpecHash": "h4/gdvusPOUoTiGdIwJIncGY1Wn2UGfvR3l0IaXt20wOBNzPhS0dsw50fjzbzIdmAnOFO0YSzH7+kBXz0t+lvA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\ASP\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1.csproj",
+  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1\\AspNetMVC.LabExercise1.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
   ],
