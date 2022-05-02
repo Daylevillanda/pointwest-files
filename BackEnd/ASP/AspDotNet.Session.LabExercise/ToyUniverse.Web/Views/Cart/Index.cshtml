@@ -1,0 +1,52 @@
+﻿@using ToyUniverse.Data.Models
+@using ToyUniverse.Web.Extensions
+@using Microsoft.AspNetCore.Http
+
+@{
+    ViewBag.Title = "Cart";
+}
+
+<h3>Cart Page</h3>
+@{
+    List<ShoppingCart> cart = Context.Session.GetObject<List<ShoppingCart>>("cart");
+    var total = cart.Sum(item => item.CToy.MToyRate * item.SiQty);
+}
+@if(cart.Count > 0)
+{
+    <table class="table table-striped">
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Price</th>
+            <th>Quantity</th>
+            <th>Sub Total</th>
+            <th></th>
+        </tr>
+        @foreach (ShoppingCart item in cart)
+        {
+            <tr>
+                <td>@item.CToy.CToyId</td>
+                <td>@item.CToy.VToyName</td>
+                <td>@item.CToy.MToyRate</td>
+                <td>@item.SiQty</td>
+                <td>@(item.CToy.MToyRate * item.SiQty)</td>
+                <td><a href="@Url.Action("Remove", "Cart", new { id = item.CToy.CToyId })"><span class="text-danger">Remove</span></a></td>
+            </tr>
+        }
+        <tr>
+            <td align="right" colspan="4">Grand Total</td>
+            <td>
+                @total
+            </td>
+            <td></td>
+        </tr>
+    </table>
+}
+else
+{
+    <span class="text-danger">Cart is Empty</span>
+}
+
+<br>
+<a href="@Url.Action("Index", "Toy")">Continue Shopping</a>
+

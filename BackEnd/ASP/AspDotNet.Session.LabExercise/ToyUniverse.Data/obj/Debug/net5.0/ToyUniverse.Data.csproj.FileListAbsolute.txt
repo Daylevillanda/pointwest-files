@@ -1,0 +1,15 @@
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\bin\Debug\net5.0\ToyUniverse.Data.deps.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\bin\Debug\net5.0\ToyUniverse.Data.runtimeconfig.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\bin\Debug\net5.0\ToyUniverse.Data.runtimeconfig.dev.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\bin\Debug\net5.0\ToyUniverse.Data.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\bin\Debug\net5.0\ToyUniverse.Data.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\obj\Debug\net5.0\ToyUniverse.Data.csproj.AssemblyReference.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\obj\Debug\net5.0\ToyUniverse.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\obj\Debug\net5.0\ToyUniverse.Data.AssemblyInfoInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\obj\Debug\net5.0\ToyUniverse.Data.AssemblyInfo.cs
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\obj\Debug\net5.0\ToyUniverse.Data.csproj.CoreCompileInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\obj\Debug\net5.0\ToyUniverse.Data.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\obj\Debug\net5.0\refint\ToyUniverse.Data.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\obj\Debug\net5.0\ToyUniverse.Data.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\obj\Debug\net5.0\ToyUniverse.Data.genruntimeconfig.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\ASP\AspDotNet.Session.LabExercise\ToyUniverse.Data\obj\Debug\net5.0\ref\ToyUniverse.Data.dll

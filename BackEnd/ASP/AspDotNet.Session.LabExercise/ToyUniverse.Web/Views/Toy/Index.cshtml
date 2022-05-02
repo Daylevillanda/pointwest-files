@@ -1,0 +1,65 @@
+﻿@using ToyUniverse.Data.Models
+@using ToyUniverse.Web.Models
+@model PagedResult<Toy>
+
+<h4>Toys</h4>
+@*<label for="size">Show</label>
+<input id="size" style="width: 30px" name="size" value=5>
+@Html.ActionLink("to10", "Index", "Toy", new { size=10 })*@
+<hr />
+<form asp-action="Index" asp-controller="Toy" method="post">
+    <table class="table table-striped">
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Name</th>
+            <th scope="col">Description</th>
+            <th scope="col">Rate</th>
+            <th scope="col">Quantity</th>
+            <th scope="col"></th>
+        </tr>
+        @foreach (var toy in Model.Results)
+        {
+            <tr>
+                <td scope="row">@toy.CToyId</td>
+                <td>@toy.VToyName</td>
+                <td>@toy.VToyDescription</td>
+                <td>@toy.MToyRate</td>
+                <td>@toy.SiToyQoh</td>
+                <td align="center">
+                    <a href="@Url.Action("Add", "Cart", new { id = @toy.CToyId })">Add To Cart</a>
+                </td>
+            </tr>
+        }
+    </table>
+    <br />
+
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            @for (int pageIndex = 1; pageIndex <= Model.PageCount; pageIndex++)
+            {
+
+                @if (pageIndex != Model.CurrentPage)
+                {
+
+                    <li class="page-item"><a class="page-link" href="javascript:pagerClick(@pageIndex);">@pageIndex</a></li>
+                }
+                else
+                {
+                    <li class="page-item active">
+                        <a class="page-link" href="#">@pageIndex <span class="sr-only">(current)</span></a>
+                    </li>
+                }
+
+            }
+        </ul>
+    </nav>
+    <input type="hidden" id="currentPageIndex" name="currentPageIndex" />
+    @*<input type="hidden" id="size" name="size"/>*@
+</form>
+<script type="text/javascript">
+    function pagerClick(index) {
+        document.getElementById("currentPageIndex").value = index;
+        //document.getElementById("size").value = @ViewBag.Size;
+        document.forms[0].submit();
+    }
+</script>
