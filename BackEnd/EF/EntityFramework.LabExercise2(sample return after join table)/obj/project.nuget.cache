@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "QvIVorsnY8dyvaDYDCiIReqYAzlwLBP5p19erq+gBammyrSVzH/kejzLBASeikO09sUqf7DANyjUC2IsvpJDbw==",
+  "dgSpecHash": "cS1zjYt8zz3ExXXymnz/D79Frro/KaTW0gQwoZ/pSdWJKdxrmteJ1lslDzdQ8Keo5r8VCbSq3AnCAJoocav8mg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\dayle.villanda\\Desktop\\EntityFramework.LabExercise2\\EntityFramework.LabExercise2.csproj",
+  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.LabExercise2(sample return after join table)\\EntityFramework.LabExercise2.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\dayle.villanda\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
     "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

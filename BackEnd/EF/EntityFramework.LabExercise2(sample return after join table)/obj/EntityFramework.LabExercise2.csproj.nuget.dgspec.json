@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\dayle.villanda\\Desktop\\EntityFramework.LabExercise2\\EntityFramework.LabExercise2.csproj": {}
+    "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.LabExercise2(sample return after join table)\\EntityFramework.LabExercise2.csproj": {}
   },
   "projects": {
-    "C:\\Users\\dayle.villanda\\Desktop\\EntityFramework.LabExercise2\\EntityFramework.LabExercise2.csproj": {
+    "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.LabExercise2(sample return after join table)\\EntityFramework.LabExercise2.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\dayle.villanda\\Desktop\\EntityFramework.LabExercise2\\EntityFramework.LabExercise2.csproj",
+        "projectUniqueName": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.LabExercise2(sample return after join table)\\EntityFramework.LabExercise2.csproj",
         "projectName": "EntityFramework.LabExercise2",
-        "projectPath": "C:\\Users\\dayle.villanda\\Desktop\\EntityFramework.LabExercise2\\EntityFramework.LabExercise2.csproj",
+        "projectPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.LabExercise2(sample return after join table)\\EntityFramework.LabExercise2.csproj",
         "packagesPath": "C:\\Users\\dayle.villanda\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\dayle.villanda\\Desktop\\EntityFramework.LabExercise2\\obj\\",
+        "outputPath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.LabExercise2(sample return after join table)\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
