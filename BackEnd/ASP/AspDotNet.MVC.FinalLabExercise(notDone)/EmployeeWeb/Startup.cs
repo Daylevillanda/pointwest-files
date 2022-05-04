@@ -36,9 +36,8 @@ namespace EmployeeWeb
 
             var connectionString = Configuration.GetValue<string>("ConnectionString");
             services.AddDbContext<WorkScheduleDbContext>(options => options.UseSqlServer(connectionString));
-            services.AddScoped<IEmployeeRepository, EmployeeRepository>();
+            services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IEmployeeService, EmployeeService>();
-
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

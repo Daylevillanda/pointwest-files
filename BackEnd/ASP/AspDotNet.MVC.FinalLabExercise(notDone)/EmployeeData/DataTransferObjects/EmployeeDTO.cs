@@ -9,6 +9,7 @@ namespace EmployeeData.DataTransferObjects
     public class EmployeeSkillDTO
     {
         public int EmployeeId { get; set; }
+        public int SkillId { get; set; }
         public string Description { get; set; }
     }
 }

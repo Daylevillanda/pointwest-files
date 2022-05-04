@@ -16,6 +16,7 @@ namespace EmployeeData.Repositories
         T Insert(T entity);
         T Update(T entity);
         //T Delete(int id);
+        public void SaveChanges();
 
         WorkScheduleDbContext Context { get; set; }
     }
@@ -50,18 +51,13 @@ namespace EmployeeData.Repositories
         public T Insert(T entity)
         {
             Context.Add<T>(entity);
-            Context.SaveChanges();
             return entity;
         }
 
         public T Update(T entity)
         {
-
             this.Context.Attach<T>(entity);
-
-
             this.Context.Entry<T>(entity).State = EntityState.Modified;
-            this.Context.SaveChanges();
             return entity;
         }
 
@@ -72,5 +68,9 @@ namespace EmployeeData.Repositories
         //    this.Context.SaveChanges();
         //    return entity;
         //}
+        public void SaveChanges()
+        {
+            this.Context.SaveChanges();
+        }
     }
 }

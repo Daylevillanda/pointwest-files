@@ -3,6 +3,9 @@
 
 @model PagedResult<Employee>;
 <h4>Employees</h4>
+<p>
+    <a href='@Url.Action("New", "Employee")' class="btn btn-primary btn-sm">+New</a>
+</p>
 <hr />
 <form asp-action="Index" asp-controller="Employee" method="get">
     <table class="table table-striped table-primary">

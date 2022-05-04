@@ -29,6 +29,7 @@ namespace EmployeeData.Repositories
                 (e, s) => new EmployeeSkillDTO
                 {
                     EmployeeId = e.EmployeeId,
+                    SkillId = s.SkillId,
                     Description = s.Description
                 }
                 ).Where(e => e.EmployeeId.Equals(id)).ToList();

@@ -1,5 +1,6 @@
 ﻿@using EmployeeData.DataTransferObjects
-@model EmployeeData.Models.Employee
+@using EmployeeData.Models
+@model Employee
 
 @{
     var action = ViewData["Action"];
@@ -10,39 +11,64 @@
         {
             <input asp-for="EmployeeId" type="hidden" />
         }
-    <div class="row mb-3">
-        <label for="FirstName" class="col-sm-2 col-form-label">FirstName</label>
-        <div class="col-sm-10">
-            <input asp-for="FirstName" class="form-control" />
-            <span asp-validation-for="FirstName"></span>
+    <div class="row">
+        <div class="col">
+            <div class="row mb-3">
+                <label for="FirstName" class="col-sm-2 col-form-label">FirstName</label>
+                <div class="col-sm-10">
+                    <input asp-for="FirstName" class="form-control" />
+                    <span asp-validation-for="FirstName"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="LastName" class="col-sm-2 col-form-label">LastName</label>
+                <div class="col-sm-10">
+                    <input asp-for="LastName" class="form-control" />
+                    <span asp-validation-for="LastName"></span>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="HomePhone" class="col-sm-2 col-form-label">Home Phone</label>
+                <div class="col-sm-10">
+                    <input asp-for="HomePhone" class="form-control" />
+                    <span asp-validation-for="HomePhone"></span>
+                </div>
+            </div>           
+            <input asp-for="Active" class="form-control" type="hidden"/>
+            <button type="submit" value="Save" class="btn btn-primary">Save</button>
+        </div>
+        
+        <div class="col">
+            @if(action != null && action.ToString().ToLower().Equals("edit"))
+            {                
+                
+                <div class="dropdown">
+                  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Add Skills
+                  </button>
+                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    @foreach(EmployeeSkillDTO skill in ViewBag.ExistingSkills)
+                        {
+                            @if(Model.EmployeeId != skill.EmployeeId)
+                            {
+                                <span class="dropdown-item">@Html.ActionLink(skill.Description, "AddSkill", new { employeeId = Model.EmployeeId, skillId = skill.SkillId})</span>
+                            }                            
+                        }
+                    </div>
+                </div>
+                <table class="table">
+                    <tr>
+                        <th>Skills</th>
+                    </tr>
+                    @foreach(EmployeeSkillDTO skill in ViewBag.Skills)
+                    {
+                        <tr>
+                            <td>@skill.Description</td>
+                        </tr>
+                    }
+                </table>
+            }
         </div>
     </div>
-    <div class="row mb-3">
-        <label for="LastName" class="col-sm-2 col-form-label">LastName</label>
-        <div class="col-sm-10">
-            <input asp-for="LastName" class="form-control" />
-            <span asp-validation-for="LastName"></span>
-        </div>
-    </div>
-    <div class="row mb-3">
-        <label for="HomePhone" class="col-sm-2 col-form-label">Home Phone</label>
-        <div class="col-sm-10">
-            <input asp-for="HomePhone" class="form-control" />
-            <span asp-validation-for="HomePhone"></span>
-        </div>
-    </div>
-    <input asp-for="Active" class="form-control" type="hidden"/>
-    <button type="submit" value="Save" class="btn btn-primary">Save</button>
 </form>
 <br />
-<table class="table">
-    <tr>
-        <th>Skills</th>
-    </tr>
-    @foreach(EmployeeSkillDTO skill in ViewBag.Skills)
-    {
-        <tr>
-            <td>@skill.Description</td>
-        </tr>
-    }
-</table>

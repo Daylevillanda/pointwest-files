@@ -15,16 +15,13 @@ namespace EmployeeWeb.Services
 
     public class EmployeeService : GenericService, IEmployeeService
     {
-        private IEmployeeRepository employeeRepository;
 
-        public EmployeeService(IEmployeeRepository employeeRepository, WorkScheduleDbContext context) : base(context)
-        {
-            this.employeeRepository = employeeRepository;
+        public EmployeeService(IUnitOfWork unitOfWork) : base(unitOfWork)
+        { 
         }
-
         public PagedResult<Employee> GetEmployeePage(int currentPage)
         {
-            return GetPaged<Employee>(employeeRepository.Context.Employees.Where(e=>e.Active.Equals(true)), currentPage, 10);
+            return GetPaged<Employee>(unitOfWork.EmployeeRepository.Context.Employees.Where(e=>e.Active.Equals(true)), currentPage, 10);
         }
     }
 }

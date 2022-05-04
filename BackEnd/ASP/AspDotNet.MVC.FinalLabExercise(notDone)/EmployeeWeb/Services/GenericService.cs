@@ -8,10 +8,10 @@ namespace EmployeeWeb.Services
 {
     public abstract class GenericService
     {
-        public WorkScheduleDbContext Context { get; set; }
-        public GenericService(WorkScheduleDbContext context)
+        public IUnitOfWork unitOfWork { get; set; }
+        public GenericService(IUnitOfWork unitOfWork)
         {
-            this.Context = context;
+            this.unitOfWork = unitOfWork;
         }
         public PagedResult<T> GetPaged<T>(IQueryable<T> query,
                                  int page, int pageSize) where T : class
