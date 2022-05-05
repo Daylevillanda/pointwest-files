@@ -8,7 +8,8 @@ import { IProduct } from './models/products';
 })
 export class ProductServiceService {
 
-  private productUrl: string = 'https://pw-uiewg-walletapp.firebaseio.com/products.json';
+  // private productUrl: string = 'https://pw-uiewg-walletapp.firebaseio.com/products.json';
+  private productUrl: string = 'https://localhost:44307/products';
 
   constructor(private http: HttpClient) { }
 

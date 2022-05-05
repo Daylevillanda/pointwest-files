@@ -24,6 +24,7 @@ export class AppComponent implements OnInit, OnDestroy {
       next: products => this.products = products
       // error: err => this.errorMessage = err -> To return error
     });
+    console.log(this.products);
   }
 
   ngOnDestroy(): void {
