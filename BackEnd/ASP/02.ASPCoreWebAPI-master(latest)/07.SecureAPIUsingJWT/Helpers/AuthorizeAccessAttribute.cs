@@ -11,6 +11,7 @@ namespace WebApi.Helpers
     {
         public void OnAuthorization(AuthorizationFilterContext context)
         {
+            var some = context.HttpContext.Items;
             var user = (User)context.HttpContext.Items["User"];
             if (user == null)
             {

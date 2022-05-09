@@ -4,6 +4,7 @@
         <TargetFramework>net5.0</TargetFramework>
         <RootNamespace>WebApiDemo</RootNamespace>
         <AssemblyName>WebApiEntityFramework</AssemblyName>
+        <UserSecretsId>8896f02b-04bb-4ead-a3d6-604c3c7fb546</UserSecretsId>
     </PropertyGroup>
 
     <ItemGroup>

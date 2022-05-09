@@ -38,8 +38,6 @@ namespace WebApiDemo
             services.AddDbContext<OnlineShopContext>(opts => opts.UseSqlServer(Configuration["DbConnectionString"]));
             services.AddScoped<IUnitOfWork, UnitOfWork>();
 
-
-
             services.AddControllers(config =>
             {
                 config.Filters.Add(new ValidationFilter());

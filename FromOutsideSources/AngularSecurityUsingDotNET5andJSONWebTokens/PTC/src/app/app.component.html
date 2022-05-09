@@ -1,0 +1,21 @@
+<div class="container">
+  <nav class="navbar navbar-expand-md navbar-light bg-light">
+    <a class="navbar-brand" routerLink="/dashboard">Home</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navItems"
+      aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navItems">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" routerLink="/products">Products</a>
+        <a class="nav-item nav-link" routerLink="/categories">Categories</a>
+        <a class="nav-item nav-link" routerLink="/settings">Settings</a>
+        <a class="nav-item nav-link" routerLink="/logmaintenance">Logs</a>
+      </div>
+    </div>
+  </nav>
+</div>
+
+<div class="container body-content">
+  <router-outlet></router-outlet>
+</div>

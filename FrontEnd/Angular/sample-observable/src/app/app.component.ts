@@ -1,5 +1,5 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { Subscription } from 'rxjs';
+import { concatWith, Subscription } from 'rxjs';
 import { IProduct } from './models/products';
 import { ProductServiceService } from './product-service.service';
 
@@ -8,7 +8,7 @@ import { ProductServiceService } from './product-service.service';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent implements OnInit, OnDestroy {
+export class AppComponent implements OnInit {
 
   products: IProduct[] = [];
 
@@ -24,11 +24,15 @@ export class AppComponent implements OnInit, OnDestroy {
       next: products => this.products = products
       // error: err => this.errorMessage = err -> To return error
     });
-    console.log(this.products);
+    console.log('inside ngOnInit')
+    console.log(this.products)
   }
 
-  ngOnDestroy(): void {
-    this.sub.unsubscribe();
+  some(): void {
+    console.log('inside some function')
+    console.log(this.products)
   }
+
+  
 
 }

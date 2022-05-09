@@ -1,0 +1,13 @@
+<!-- ** BEGIN: INFORMATION MESSAGE AREA ** -->
+<div class="row"
+     *ngIf="messageService.infoMessages.length > 0">
+  <div class="col">
+    <div class="card card-body bg-light">
+      <span *ngFor="let msg of messageService.infoMessages">
+        {{msg}}
+        <br />
+      </span>
+    </div>
+  </div>
+</div>
+<!-- ** END: INFORMATION MESSAGE AREA ** -->

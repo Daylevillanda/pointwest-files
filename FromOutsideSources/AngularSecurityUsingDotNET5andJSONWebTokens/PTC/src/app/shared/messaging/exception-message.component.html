@@ -1,0 +1,14 @@
+<!-- ** BEGIN: EXCEPTION MESSAGE AREA ** -->
+<div class="row" *ngIf="messageService.exceptionMessages.length > 0">
+  <div class="col ">
+    <div class="alert alert-danger" role="alert">
+      <h3>Exception messages</h3>
+      <ul>
+        <li *ngFor="let msg of messageService.exceptionMessages">
+          {{msg}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- ** END: EXCEPTION MESSAGE AREA ** -->

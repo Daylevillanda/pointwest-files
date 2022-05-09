@@ -1,0 +1,26 @@
+<div class="row">
+  <div class="col">
+    <h1>Category List</h1>
+  </div>
+</div>
+
+<info-message></info-message>
+<exception-message></exception-message>
+
+<div *ngIf="categories && categories.length">
+  <table class="table table-bordered table-striped 
+                table-condensed">
+    <thead>
+      <tr>
+        <th>Category ID</th>
+        <th>Category Name</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let category of categories">      
+        <td>{{category.categoryId}}</td>
+        <td>{{category.categoryName}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

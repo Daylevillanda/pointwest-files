@@ -1,0 +1,70 @@
+<div class="row">
+  <div class="col">
+    <h1>Product List</h1>
+  </div>
+</div>
+
+<info-message></info-message>
+<exception-message></exception-message>
+
+<div class="card card-default" *ngIf="products && products.length">
+  <div class="card-header">
+    <h3 class="card-title">
+      Search Criteria
+    </h3>
+  </div>
+  <div class="card-body">
+    <div class="form-group">
+      <label for="productName">
+        Search for Product Name</label>
+      <input id="productName" name="productName" 
+             type="text" class="form-control"
+             [(ngModel)]="searchProduct.productName" />
+    </div>
+  </div>
+  <div class="card-footer">
+    <button class="btn btn-primary" (click)="search()">
+      Search
+    </button>
+    <button class="btn btn-primary" (click)="reset()">
+      Reset
+    </button>
+    <button class="btn btn-primary" (click)="addProduct()">
+      Add New Product
+    </button>
+  </div>
+</div>
+
+<div *ngIf="products && products.length">
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Actions</th>
+        <th>Product Name</th>
+        <th>Introduction Date</th>
+        <th class="currency">Price</th>
+        <th>URL</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of products">
+        <td>
+          <a href="#" class="btn btn-primary" [routerLink]="['/productDetail', product.productId]">
+            Edit
+          </a>
+        </td>
+        <td>{{product.productName}}</td>
+        <td>{{product.introductionDate | date}}</td>
+        <td class="currency">{{product.price| currency}}</td>
+        <td>{{product.url}}</td>
+        <td>
+          <button class="btn btn-danger"
+                  (click)="deleteProduct(product.productId)">          
+            Del
+          </button>
+        </td>        
+      </tr>
+    </tbody>
+  </table>
+</div>

@@ -1,0 +1,15 @@
+<!-- ** BEGIN: VALIDATION MESSAGE AREA ** -->
+<div class="row" 
+     *ngIf="messageService.validationMessages.length > 0">
+  <div class="col">
+    <div class="alert alert-danger" role="alert">
+      <ul>
+        <li *ngFor="let msg of
+                     messageService.validationMessages">
+          {{msg}}
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<!-- ** END: VALIDATION MESSAGE AREA ** -->
