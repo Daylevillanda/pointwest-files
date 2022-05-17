@@ -1,0 +1,29 @@
+<div style="width: 400px; margin: auto;">
+    <div class="submit-form">
+      <div>
+        <div class="form-group">
+          <label for="title">Album</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            required
+            [(ngModel)]="album.AlbumName"
+            name="albumName"
+          />
+        </div>
+        <div>
+          <label for="Description">Description</label>
+          <input
+            type="textfield"
+            class="form-control"
+            id="title"
+            required
+            [(ngModel)]="album.AlbumDescription"
+            name="Description"
+          />
+        </div>
+        <br>
+        <button (click)="addAlbum()" class="btn btn-success">Add Album</button>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div style="width: 400px; margin: auto;">
+    <div class="submit-form">
+      <div>
+        <div class="form-group">
+          <label for="title"><h2>Comment</h2></label>
+          <form #f="ngForm" (ngSubmit)="onSubmit(f)" novalidate>
+            <input
+                    type="text"
+                    class="form-control"
+                    ngModel
+                    id="title"
+                    required
+                    [(ngModel)]="newComment.CommentContent"
+                    name="renderComment"
+                    style="margin-bottom:14px"
+                  />
+                  <button (click)="commentOnClick()" class="btn btn-success" routerLink="/posts">Add Comment</button>
+                  <!-- <button (click)="postOnClick()" >Submit</button> -->
+          </form>
+        </div>
+        
+        <!-- <p>{{posts$|async|json}}</p> -->
+        <p *ngFor="let comment of commentText" style="border-style: dashed; margin-top: 8px; padding: 10px">
+            {{comment.renderComment}}
+        </p>
+      </div>
+    </div>
+  </div>
+

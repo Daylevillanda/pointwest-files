@@ -1,0 +1,127 @@
+<p>user-registration works!</p>
+<h2>Registration Form</h2>
+<form [formGroup]="registrationform" (submit)="addNewUser()">
+  <div>
+    <label for="EmailAddress">Email Address</label>
+    <input
+      type="text"
+      name="EmailAddress"
+      formControlName="EmailAddress"
+      required
+    >
+    <div [ngIf]="EmailAddress?.errors?.['required']">
+      This field is required.
+    </div>
+    <div *ngIf="EmailAddress?.errors?.['pattern']">
+      Please enter a valid email address.
+    </div>
+  </div>
+  <div>
+    <label for="Password">Password</label>
+    <input
+      type="password"
+      name="Password"
+      formControlName="Password"
+      required
+    >
+    <div *ngIf="Password?.errors?.['required']">
+      This field is required.
+    </div>
+  </div>
+  <div>
+    <label for="FirstName">First Name</label>
+    <input
+      type="text"
+      name="FirstName"
+      formControlName="FirstName"
+      required
+    >
+    <div [ngIf]="FirstName?.errors?.['required']">
+      This field is required.
+    </div>
+    <div *ngIf="FirstName?.errors?.['pattern']">
+      Please enter a valid first name.
+    </div>
+  </div>
+  <div>
+    <label for="LastName">Last Name</label>
+    <input
+      type="text"
+      name="LastName"
+      formControlName="LastName"
+      required
+    >
+    <div [ngIf]="LastName?.errors?.['required']">
+      This field is required.
+    </div>
+    <div *ngIf="LastName?.errors?.['pattern']">
+      Please enter a valid last name.
+    </div>
+  </div>
+  <div>
+    <label for="Birthday">Birthday</label>
+    <input
+      type="date"
+      name="Birthday"
+      formControlName="Birthday"
+      required
+    >
+    <div [ngIf]="Birthday?.errors?.['required']">
+      This field is required.
+    </div>
+  </div>
+  <div>
+    <label for="Gender">Gender</label>
+    <input
+      type="text"
+      name="Gender"
+      formControlName="Gender"
+      required
+    >
+    <div [ngIf]="Gender?.errors?.['pattern']">
+      Please enter a valid gender.
+    </div>
+  </div>
+  <div>
+    <label for="MobileNumber">Mobile Number</label>
+    <input
+      type="text"
+      name="MobileNumber"
+      formControlName="MobileNumber"
+    >
+    <div *ngIf="MobileNumber?.errors?.['pattern']">
+      Please enter a valid phone number.
+    </div>
+  </div>
+  <input type="submit" value="Submit" >
+  <!-- <input type="submit" value="Submit" [disabled]="registrationform.invalid"> 
+[(ngModel)]="newUser.MobileNumber"
+      [(ngModel)]="newUser.Gender"
+      [(ngModel)]="newUser.Birthday"
+      [(ngModel)]="newUser.LastName"
+      [(ngModel)]="newUser.FirstName"
+      [(ngModel)]="newUser.Password"
+      [(ngModel)]="newUser.EmailAddress"
+-->
+</form>
+<p>{{registrationform.value | json}}</p>
+<!-- <button type="button" class="btn btn-primary" (click)="addNewUser()">Add</button>
+
+<div style="width: 400px; margin: auto;">
+    <div class="submit-form">
+      <div>
+        <div class="form-group">
+          <label for="title">Album</label>
+          <input
+            type="text"
+            class="form-control"
+            id="title"
+            required
+            [(ngModel)]="post.PostContent"
+            name="albumName"
+          />
+        </div>
+        <button (click)="addPost()" class="btn btn-success">Add Post</button>
+      </div>
+    </div>
+  </div> -->

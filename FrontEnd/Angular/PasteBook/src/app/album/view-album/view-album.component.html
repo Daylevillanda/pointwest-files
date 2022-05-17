@@ -1,0 +1,11 @@
+<div>
+    <ul>
+      <li *ngFor="let album of albums">
+        <button (click)="deleteAlbum(album.albumId)" id="clear">Delete</button>
+          <a href="/view-albums/{{album.albumId}}">{{album.albumName}}</a>
+      </li>
+    </ul>
+</div>
+<div>
+  <button routerLink="/add-album">Create New Album</button>
+</div>

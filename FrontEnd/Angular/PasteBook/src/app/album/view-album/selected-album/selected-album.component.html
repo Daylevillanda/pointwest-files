@@ -1,0 +1,32 @@
+<div *ngIf="album">
+    <div>
+        <div *ngIf="!isEdit">
+            <h1>{{album.albumName}}</h1>
+        </div>
+        <div *ngIf="isEdit">
+            <input type="text" [(ngModel)]="album.albumName" value="{{album.albumName}}">     
+        </div>
+    </div>
+    <div>
+        <div *ngIf="!isEdit">
+            <h1>{{album.albumDescription}}</h1>
+        </div>
+        <div *ngIf="isEdit">
+            <input type="text" [(ngModel)]="album.albumDescription">
+        </div>
+    </div>
+    <div>
+        <div *ngIf="!isEdit">
+            <button (click)="updateAlbum()">Edit</button>
+        </div>
+        <div *ngIf="isEdit">
+            <button (click)="saveAlbum()">Save</button>
+            <button (click)="cancel()">Cancel</button>
+        </div>
+    </div>
+</div>
+<br><br>
+<div>
+    <input type="file" (change)="onFileSelected($event)">
+    <input type="button" value="upload" (click)="onUpload()">
+</div>

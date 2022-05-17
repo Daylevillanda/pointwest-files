@@ -1,0 +1,35 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+    <form class="navbar-form" role="search">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="search" name="q">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                <!-- <button class="btn btn-primary" type="submit">search</button> -->
+            </div>
+        </div>
+    </form>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <span class="nav-link" href="#">CurrentUser({{user?.firstName}})</span>
+          </li>     
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['/']">home</a>
+          </li>  
+          <li class="nav-item">
+            <a class="nav-link" href="#">notification</a>
+          </li>     
+          <li class="nav-item">
+            <a class="nav-link" href="#">settings</a>
+          </li> 
+          <li class="nav-item">
+            <button class="btn btn-primary" type="submit" (click)="logout()">logout</button>
+          </li>          
+          <li class="nav-item">
+            <a class="nav-link" [routerLink]="['users']">users</a>
+          </li> 
+        </ul> 
+      </div>
+    </div>
+  </nav>
