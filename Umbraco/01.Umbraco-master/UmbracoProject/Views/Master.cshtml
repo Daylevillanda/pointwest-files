@@ -1,0 +1,14 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+<p>This is Master</p>
+
+<p>Own Nav</p>
+@await Html.PartialAsync("Own Navigation")
+<p>Nav from snippet</p>
+@await Html.PartialAsync("Navigation")
+
+<p>This is Content</p>
+@RenderBody()

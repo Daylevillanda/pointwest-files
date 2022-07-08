@@ -16,6 +16,7 @@ export class AppComponent {
   onFileSelected(event: any){
     this.selectedFile = <File>event.target.files[0];
   }
+  
   onUpload(){
     const filedata = new FormData();
     filedata.append('image', this.selectedFile, this.selectedFile.name);
@@ -23,5 +24,4 @@ export class AppComponent {
     this.http.post("https://localhost:44368/photos/upload", filedata).subscribe(res =>
     console.log(res));
   }
-
 }

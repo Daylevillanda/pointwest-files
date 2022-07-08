@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "xUhTGW8p+q0bhSlvSFpYvR5nyV9gucuECBlFcpi24s1ptomx1BfPPGVIgnSVLuiDMwItUnLKoDDhMCNCllzLcg==",
+  "dgSpecHash": "7i/lVv2QUCkG81wu2pWu02jXBKrI/1a6sYoAvvCnrfQQhxWDxNy7J5nRIBrH0oU7ebzZsrFlGj71DlWmajcf9Q==",
   "success": true,
   "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\EF\\EntityFramework.Demo1a(venerUpdated)\\EntityFramework.Demo1a.csproj",
   "expectedPackageFiles": [
@@ -101,7 +101,7 @@
     "C:\\Users\\dayle.villanda\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\dayle.villanda\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
     "C:\\Users\\dayle.villanda\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
-    "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.16\\microsoft.netcore.app.host.win-x64.5.0.16.nupkg.sha512"
+    "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
   ],
   "logs": []
 }

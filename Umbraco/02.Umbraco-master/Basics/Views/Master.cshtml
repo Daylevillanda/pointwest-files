@@ -1,0 +1,13 @@
+﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@{
+	Layout = null;
+}
+
+@await Html.PartialAsync("Navigation")
+@await Html.PartialAsync("Own Navigation")
+
+@Model.Value("pageTitle", fallback: Fallback.ToAncestors)
+@Model.Value("pageBody", fallback: Fallback.ToAncestors)
+
+@RenderBody()

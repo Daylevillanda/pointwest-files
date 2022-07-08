@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "sQ+4SS9kLD3K0US5HicSacSpPeW9hjQwjce+bD3a7DTqDhS22B8lStkE8YXzi4s8dvTXm0TChz1dtrO07DfUwg==",
+  "dgSpecHash": "wJqtudAtlrRzFjuUoC2DIbgPxIzcTPNjIGQUNhHguHO1MWM8nKf0zvlDyvq2Up9+rURlSAMsHWCgajCZSBnaxQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Administrator\\source\\repos\\AspDotNetCore.MVC.Demo1b\\AspDotNetCore.MVC.Demo1b\\AspDotNetCore.MVC.Demo1b.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "C:\\Users\\dayle.villanda\\Documents\\Github\\pointwest-files\\BackEnd\\ASP\\AspDotNetCore.MVC.Demo1b(vener)\\AspDotNetCore.MVC.Demo1b\\AspDotNetCore.MVC.Demo1b.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\dayle.villanda\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\5.0.17\\microsoft.netcore.app.host.win-x64.5.0.17.nupkg.sha512"
+  ],
   "logs": []
 }

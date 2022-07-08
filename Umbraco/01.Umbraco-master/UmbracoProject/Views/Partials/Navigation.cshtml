@@ -1,0 +1,27 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+@using Umbraco.Cms.Core
+@using Umbraco.Cms.Core.Models.PublishedContent
+@using Umbraco.Cms.Core.Routing
+@using Umbraco.Extensions
+
+@inject IPublishedValueFallback PublishedValueFallback
+@inject IPublishedUrlProvider PublishedUrlProvider
+@*
+    This snippet displays a list of links of the pages immediately under the top-most page in the content tree.
+    This is the home page for a standard website.
+    It also highlights the current active page/section in the navigation with the CSS class "current".
+*@
+
+@{ var selection = Model?.Root().Children.Where(x => x.IsVisible(PublishedValueFallback)).ToArray(); }
+
+@if (selection?.Length > 0)
+{
+    <ul>
+        @foreach (var item in selection)
+        {
+            <li class="@(item.IsAncestorOrSelf(Model) ? "current" : null)">
+                <a href="@item.Url(PublishedUrlProvider)">@item.Name</a>
+            </li>
+        }
+    </ul>
+}

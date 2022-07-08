@@ -1,0 +1,17 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+
+<p>This is from an Empty Partial Using Query Builder</p>
+@{
+	var selection = Umbraco.Content(Guid.Parse("0e92988f-6132-43eb-82ba-a461d2def71e"))
+    .Children()
+    .Where(x => x.IsVisible());
+}
+<ul>
+	@foreach (var item in selection)
+	{
+		<li>
+			<a href="@item.Url()">@item.Name()</a>
+		</li>
+	}
+</ul>
+
