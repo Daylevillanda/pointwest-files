@@ -1,0 +1,24 @@
+C:\Users\USER\source\repos\CoffeeMaker\bin\Debug\net6.0\CoffeeMakerDemo.deps.json
+C:\Users\USER\source\repos\CoffeeMaker\bin\Debug\net6.0\CoffeeMakerDemo.dll
+C:\Users\USER\source\repos\CoffeeMaker\bin\Debug\net6.0\CoffeeMakerDemo.pdb
+C:\Users\USER\source\repos\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.AssemblyInfo.cs
+C:\Users\USER\source\repos\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.dll
+C:\Users\USER\source\repos\CoffeeMaker\obj\Debug\net6.0\refint\CoffeeMakerDemo.dll
+C:\Users\USER\source\repos\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.pdb
+C:\Users\USER\source\repos\CoffeeMaker\obj\Debug\net6.0\ref\CoffeeMakerDemo.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMaker\bin\Debug\net6.0\CoffeeMakerDemo.deps.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMaker\bin\Debug\net6.0\CoffeeMakerDemo.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMaker\bin\Debug\net6.0\CoffeeMakerDemo.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.csproj.AssemblyReference.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.AssemblyInfoInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.AssemblyInfo.cs
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.csproj.CoreCompileInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMaker\obj\Debug\net6.0\refint\CoffeeMakerDemo.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMaker\obj\Debug\net6.0\CoffeeMakerDemo.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMaker\obj\Debug\net6.0\ref\CoffeeMakerDemo.dll

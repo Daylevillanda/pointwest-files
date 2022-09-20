@@ -1,0 +1,202 @@
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\testhost.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\testhost.exe
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\CoffeeMakerTest.deps.json
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\CoffeeMakerTest.runtimeconfig.json
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\CoffeeMakerTest.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\CoffeeMakerTest.pdb
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.TestPlatform.CoreUtilities.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.TestPlatform.CommunicationUtilities.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.TestPlatform.CrossPlatEngine.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.TestPlatform.Utilities.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\NuGet.Frameworks.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\CoffeeMakerDemo.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\bin\Debug\net6.0\CoffeeMakerDemo.pdb
+C:\Users\USER\source\repos\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.csproj.AssemblyReference.cache
+C:\Users\USER\source\repos\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USER\source\repos\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.AssemblyInfoInputs.cache
+C:\Users\USER\source\repos\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.AssemblyInfo.cs
+C:\Users\USER\source\repos\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.csproj.CoreCompileInputs.cache
+C:\Users\USER\source\repos\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.csproj.CopyComplete
+C:\Users\USER\source\repos\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\obj\Debug\net6.0\refint\CoffeeMakerTest.dll
+C:\Users\USER\source\repos\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.pdb
+C:\Users\USER\source\repos\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.genruntimeconfig.cache
+C:\Users\USER\source\repos\CoffeeMakerTest\obj\Debug\net6.0\ref\CoffeeMakerTest.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\CoverletSourceRootsMapping
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\testhost.exe
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\testhost.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.TestPlatform.AdapterUtilities.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.TestPlatform.PlatformAbstractions.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\CoffeeMakerTest.deps.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\CoffeeMakerTest.runtimeconfig.json
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\CoffeeMakerTest.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\CoffeeMakerTest.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.TestPlatform.CoreUtilities.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.ObjectModel.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.TestPlatform.CommunicationUtilities.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.TestPlatform.CrossPlatEngine.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.TestPlatform.Utilities.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.Common.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.TestFramework.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\NuGet.Frameworks.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\de\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\de\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\es\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\es\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\fr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\it\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\it\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ja\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ko\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\pl\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\pt-BR\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ru\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\tr\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CoreUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.ObjectModel.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\cs\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\cs\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\de\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\de\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\de\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\es\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\es\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\es\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\fr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\fr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\it\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\it\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\it\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ja\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ja\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ko\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ko\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\pl\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\pl\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\pt-BR\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\pt-BR\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ru\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\ru\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\tr\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\tr\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\zh-Hans\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\zh-Hans\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CommunicationUtilities.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\zh-Hant\Microsoft.TestPlatform.CrossPlatEngine.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\zh-Hant\Microsoft.VisualStudio.TestPlatform.Common.resources.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\CoffeeMakerDemo.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\bin\Debug\net6.0\CoffeeMakerDemo.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.csproj.AssemblyReference.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.AssemblyInfoInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.AssemblyInfo.cs
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.csproj.CoreCompileInputs.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.csproj.CopyComplete
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\obj\Debug\net6.0\refint\CoffeeMakerTest.dll
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.pdb
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\obj\Debug\net6.0\CoffeeMakerTest.genruntimeconfig.cache
+C:\Users\dayle.villanda\Documents\Github\pointwest-files\BackEnd\Testing\CoffeeMakerTest Project\CoffeeMakerTest\obj\Debug\net6.0\ref\CoffeeMakerTest.dll
