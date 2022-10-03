@@ -24,4 +24,8 @@ const sequelize = new Sequelize('sakila', 'sa', 'mysqlserver', {
     let Actor = models(sequelize).actor;
     // console.log(await Actor.findAll());
     console.log(await Actor.findAll({where: {Actor_id : 2}}));
+
+    // use json stringfiy to remove other stuffs <<----------------
+    // let result = await Actor.findAll({where: {Actor_id : 2}});
+    // console.log(JSON.stringify(result));
   })();
