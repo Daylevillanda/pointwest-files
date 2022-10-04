@@ -1,4 +1,5 @@
 const db = require('../db/connect');
+const { generateToken } = require("../helper/jwt");
 
 const getAll = async (req, res) => {
     const [rows, fields] = await db.execute('SELECT * FROM `film`');
@@ -10,80 +11,56 @@ const getAll = async (req, res) => {
     });
 };
 
-module.exports = {
-    getAll
+const getSearch = async (req, res) => {
+    const { title, genre, last_name, available } = req.query;
+
+    const [rows, fields] = await db.execute('SELECT * FROM `film`');
+    let filteredResults = [...rows];
+
+    if(title || genre || last_name || available){
+        if(title) {
+            filteredResults = filteredResults
+                .filter(a => (String(a.title
+                        .toLowerCase())
+                        .startsWith(title.toLowerCase())))
+        }
+
+        if(genre) {         
+            let sql = `
+            SELECT category.category_id, category.name, film_category.film_id
+            FROM category 
+            INNER JOIN film_category ON category.category_id = film_category.category_id
+            HAVING category.name = ?
+            `   
+            const [rows, fields] = await db.execute(sql, [genre]);
+            filteredResults = filteredResults.filter(({film_id}) => (rows.find(r => (film_id == r.film_id))))
+        }
+
+        // if(last_name) {
+        //     const [rows, fields] = await db.execute('SELECT * FROM `film_category` WHERE category_id = ?', [Number(genre)]);
+        //     filteredResults = filteredResults.filter(({film_id}) => (rows.find(r => (film_id == r.film_id))))
+        // }
+        generateToken(req.cookies.token, null).then((token) => {
+            res.cookie("token", token, { httpOnly: true });
+            res.status(200).json({ 
+                "status": 200,
+                "statusText": "OK",
+                "message": Object.entries(filteredResults).length > 0 ? "Filtered films retrieved" : "No items found",
+                "data": filteredResults,
+            });
+        });        
+    }
+    else {
+        res.status(400).json({ 
+            "status": 400,
+            "statusText": "BAD REQUEST",
+            "message": "Invalid Search",
+            "error": "Invalid Search",
+        }); 
+    }   
 };
 
-// const Product = require('../models/product');
-
-// const getAllProductsStatic = async (req, res) => {
-//   const products = await Product.find({ price: { $gt: 30 } })
-//     .sort('price')
-//     .select('name price');
-
-//   res.status(200).json({ products, nbHits: products.length });
-// };
-// const getAllProducts = async (req, res) => {
-//   const { featured, company, name, sort, fields, numericFilters } = req.query;
-//   const queryObject = {};
-
-//   if (featured) {
-//     queryObject.featured = featured === 'true' ? true : false;
-//   }
-//   if (company) {
-//     queryObject.company = company;
-//   }
-//   if (name) {
-//     queryObject.name = { $regex: name, $options: 'i' };
-//   }
-//   if (numericFilters) {
-//     const operatorMap = {
-//       '>': '$gt',
-//       '>=': '$gte',
-//       '=': '$eq',
-//       '<': '$lt',
-//       '<=': '$lte',
-//     };
-//     const regEx = /\b(<|>|>=|=|<|<=)\b/g;
-//     let filters = numericFilters.replace(
-//       regEx,
-//       (match) => `-${operatorMap[match]}-`
-//     );
-//     const options = ['price', 'rating'];
-//     filters = filters.split(',').forEach((item) => {
-//       const [field, operator, value] = item.split('-');
-//       if (options.includes(field)) {
-//         queryObject[field] = { [operator]: Number(value) };
-//       }
-//     });
-//   }
-
-//   let result = Product.find(queryObject);
-//   // sort
-//   if (sort) {
-//     const sortList = sort.split(',').join(' ');
-//     result = result.sort(sortList);
-//   } else {
-//     result = result.sort('createdAt');
-//   }
-
-//   if (fields) {
-//     const fieldsList = fields.split(',').join(' ');
-//     result = result.select(fieldsList);
-//   }
-//   const page = Number(req.query.page) || 1;
-//   const limit = Number(req.query.limit) || 10;
-//   const skip = (page - 1) * limit;
-
-//   result = result.skip(skip).limit(limit);
-//   // 23
-//   // 4 7 7 7 2
-
-//   const products = await result;
-//   res.status(200).json({ products, nbHits: products.length });
-// };
-
-// module.exports = {
-//   getAllProducts,
-//   getAllProductsStatic,
-// };
+module.exports = {
+    getAll,
+    getSearch
+};

@@ -1,5 +1,8 @@
 require('dotenv').config();
+
+const cookieParser = require("cookie-parser");
 const express = require('express');
+
 const app = express();
 
 const db = require('./db/connect');
@@ -7,17 +10,18 @@ const db = require('./db/connect');
 const filmsRoute = require('./routes/filmsRoute');
 const actorsRoute = require('./routes/actorsRoute');
 
+const { login } = require('./controllers/loginController')
+const { verifyToken } = require("./helper/jwt");
+
 //middlewares
 app.use(express.json());
+app.use(cookieParser());
 
 // routes
-app.get('/', (req, res) => {
-    res.status(200).send(`<h1>Welcome to Villanda Skilla 1</h1>`)
-});
-app.use('/api/v1/films', filmsRoute);
-app.use('/api/v1/actors', actorsRoute);
-// app.use('/api/v1/auth', authRouter);
-// app.use('/api/v1/jobs', authenticateUser, jobsRouter);
+app.get('/', (req, res) => {res.status(200).send(`<h1>Welcome to Villanda Skilla 1</h1>`)});
+app.post('/login', login);
+app.use('/api/v1/films', verifyToken, filmsRoute);
+app.use('/api/v1/actors', verifyToken, actorsRoute);
 app.get('*', (req, res) => {
     res.status(404).send(`<h1>Resource not found</h1>`);
 });
