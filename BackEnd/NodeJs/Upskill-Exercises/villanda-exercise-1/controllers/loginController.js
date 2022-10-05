@@ -6,7 +6,7 @@ const {
 
 exports.login = async (req, res) => {
     const { email } = req.body
-    const [rows, fields] = await db.execute('SELECT * FROM `customer` WHERE `email` = ?', [email]);
+    const [rows, fields] = await db.execute('SELECT * FROM `user` WHERE `email` = ?', [email]);
     if(Object.entries(rows).length > 0){
         generateToken(null, email).then((token) => {
             res.cookie("token", token, { httpOnly: true });

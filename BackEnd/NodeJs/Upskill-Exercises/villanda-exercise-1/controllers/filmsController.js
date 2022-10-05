@@ -2,7 +2,7 @@ const db = require('../db/connect');
 const { generateToken } = require("../helper/jwt");
 
 const getAll = async (req, res) => {
-    const { title, genre, last_name, available } = req.query;
+    const { title, category_id, last_name } = req.query;
 
     let sql = `
     SELECT f.*, COUNT(f.film_id) AS Stock
@@ -25,23 +25,30 @@ const getAll = async (req, res) => {
     const [rows, fields] = await db.execute(sql);
     let filteredResults = [...rows];
 
-    if(title || genre || last_name || available){
+    if(title || category_id || last_name){
         if(title) {
             filteredResults = filteredResults
                 .filter(a => (String(a.title
                         .toLowerCase())
-                        .startsWith(title.toLowerCase())))
-            console.log("asd")
+                        .includes(title.toLowerCase())))
         }
 
-        if(genre) {         
+        if(category_id) { 
+            // ----------------> if search by category name        
+            // let sql = `
+            // SELECT category.category_id, category.name, film_category.film_id
+            // FROM category 
+            // INNER JOIN film_category ON category.category_id = film_category.category_id
+            // HAVING category.name = ?
+            // ` 
+
+            // ----------------> if search by category id 
             let sql = `
-            SELECT category.category_id, category.name, film_category.film_id
-            FROM category 
-            INNER JOIN film_category ON category.category_id = film_category.category_id
-            HAVING category.name = ?
-            `   
-            const [rows, fields] = await db.execute(sql, [genre]);
+            SELECT * 
+            FROM sakila.film_category 
+            WHERE category_id = ?
+            `  
+            const [rows, fields] = await db.execute(sql, [category_id]);
             filteredResults = filteredResults.filter(({film_id}) => (rows.find(r => (film_id == r.film_id))))
         }
 
@@ -79,7 +86,7 @@ const getAll = async (req, res) => {
 };
 
 const getById = async (req, res) => {
-    const { id } = req.params
+    const { film_id } = req.params
 
     let sql = `
     SELECT f.*, COUNT(f.film_id) AS Stock
@@ -111,7 +118,51 @@ const getById = async (req, res) => {
     });
 };
 
+const insert = async (req, res) => {
+    const film = req.body
+    const [rows, results, fields] = await db.query('INSERT INTO `film` SET ?', [film]);
+    generateToken(req.cookies.token, null).then((token) => {
+        res.cookie("token", token, { httpOnly: true });
+        res.status(201).json({ 
+            "status": 201,
+            "statusText": "CREATED",
+            "message": "Created successfully",
+            "Inserted id" : rows.insertId
+        });
+    });
+};
+
+const remove = async (req, res) => {
+    const { id } = req.params
+    const [rows, results, fields] = await db.query('DELETE FROM `film` WHERE film_id = ?', [id]);
+    generateToken(req.cookies.token, null).then((token) => {
+        res.cookie("token", token, { httpOnly: true });
+        res.status(200).json({ 
+            "status": 200,
+            "statusText": "OK",
+            "message": "Deleted successfully"
+        });
+    });
+};
+
+const update = async (req, res) => {
+    const { id } = req.params
+    const film = req.body
+    const [rows, results, fields] = await db.query('UPDATE `film` SET ? WHERE film_id = ?', [film, id]);
+    generateToken(req.cookies.token, null).then((token) => {
+        res.cookie("token", token, { httpOnly: true });
+        res.status(200).json({ 
+            "status": 200,
+            "statusText": "OK",
+            "message": "Updated successfully"
+        });
+    });
+};
+
 module.exports = {
     getAll,
-    getById
+    getById,
+    insert,
+    remove,
+    update
 };

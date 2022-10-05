@@ -9,6 +9,7 @@ const db = require('./db/connect');
 
 const filmsRoute = require('./routes/filmsRoute');
 const actorsRoute = require('./routes/actorsRoute');
+const customersRoute = require('./routes/customersRoute');
 
 const { login } = require('./controllers/loginController')
 const { verifyToken } = require("./helper/jwt");
@@ -22,6 +23,13 @@ app.get('/', (req, res) => {res.status(200).send(`<h1>Welcome to Villanda Skilla
 app.post('/login', login);
 app.use('/api/v1/films', verifyToken, filmsRoute);
 app.use('/api/v1/actors', verifyToken, actorsRoute);
+app.use('/api/v1/customers', verifyToken, customersRoute);
+
+app.post('/test', (req, res) => {
+  const { test } = req.body
+  console.log(test)
+});
+
 app.get('*', (req, res) => {
     res.status(404).send(`<h1>Resource not found</h1>`);
 });

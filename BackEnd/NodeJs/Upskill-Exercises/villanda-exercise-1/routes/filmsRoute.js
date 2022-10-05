@@ -3,10 +3,13 @@ const router = express.Router()
 
 const {
   getAll,
-  getById
+  getById,
+  insert,
+  remove,
+  update
 } = require('../controllers/filmsController')
 
-router.route('/').get(getAll)
-router.route('/:id').get(getById)
+router.route('/').get(getAll).post(insert)
+router.route('/:id').get(getById).delete(remove).put(update)
 
 module.exports = router

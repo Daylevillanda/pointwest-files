@@ -61,7 +61,51 @@ const getById = async (req, res) => {
     });
 };
 
+const insert = async (req, res) => {
+    const actor = req.body
+    const [rows, results, fields] = await db.query('INSERT INTO `actor` SET ?', [actor]);
+    generateToken(req.cookies.token, null).then((token) => {
+        res.cookie("token", token, { httpOnly: true });
+        res.status(201).json({ 
+            "status": 201,
+            "statusText": "CREATED",
+            "message": "Created successfully",
+            "Inserted id" : rows.insertId
+        });
+    });
+};
+
+const remove = async (req, res) => {
+    const { id } = req.params
+    const [rows, results, fields] = await db.query('DELETE FROM `actor` WHERE actor_id = ?', [id]);
+    generateToken(req.cookies.token, null).then((token) => {
+        res.cookie("token", token, { httpOnly: true });
+        res.status(200).json({ 
+            "status": 200,
+            "statusText": "OK",
+            "message": "Deleted successfully"
+        });
+    });
+};
+
+const update = async (req, res) => {
+    const { id } = req.params
+    const actor = req.body
+    const [rows, results, fields] = await db.query('UPDATE `actor` SET ? WHERE actor_id = ?', [actor, id]);
+    generateToken(req.cookies.token, null).then((token) => {
+        res.cookie("token", token, { httpOnly: true });
+        res.status(200).json({ 
+            "status": 200,
+            "statusText": "OK",
+            "message": "Updated successfully"
+        });
+    });
+};
+
 module.exports = {
     getAll,
-    getById
+    getById,
+    insert,
+    remove,
+    update
 };
