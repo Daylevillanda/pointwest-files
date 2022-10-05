@@ -7,11 +7,17 @@ const getAll = async (req, res) => {
     let sql = `
     SELECT f.*, COUNT(f.film_id) AS Stock
     FROM sakila.film as f
-    LEFT JOIN (SELECT i.*, r.rental_id
-    FROM sakila.inventory as i
-    LEFT JOIN (SELECT * FROM sakila.rental WHERE return_date IS NULL) AS r 
+    LEFT JOIN (
+        SELECT i.*, r.rental_id
+        FROM sakila.inventory as i
+        LEFT JOIN (
+            SELECT * 
+            FROM sakila.rental 
+            WHERE return_date IS NULL
+            ) AS r 
         ON i.inventory_id = r.inventory_id
-        HAVING r.rental_id IS NULL) as i 
+        HAVING r.rental_id IS NULL
+        ) as i 
     ON f.film_id = i.film_id
     GROUP BY f.film_id
     `
@@ -60,12 +66,15 @@ const getAll = async (req, res) => {
         });        
     }
     else {
-        res.status(200).json({ 
-            "status": 200,
-            "statusText": "OK",
-            "message": "All films retrieved",
-            "data": filteredResults,
-        }); 
+        generateToken(req.cookies.token, null).then((token) => {
+            res.cookie("token", token, { httpOnly: true });
+            res.status(200).json({ 
+                "status": 200,
+                "statusText": "OK",
+                "message": "All films retrieved",
+                "data": filteredResults,
+            }); 
+        });
     }   
 };
 
@@ -75,21 +84,30 @@ const getById = async (req, res) => {
     let sql = `
     SELECT f.*, COUNT(f.film_id) AS Stock
     FROM sakila.film as f
-    LEFT JOIN (SELECT i.*, r.rental_id
-    FROM sakila.inventory as i
-    LEFT JOIN (SELECT * FROM sakila.rental WHERE return_date IS NULL) AS r 
+    LEFT JOIN (
+        SELECT i.*, r.rental_id
+        FROM sakila.inventory as i
+        LEFT JOIN (
+            SELECT * 
+            FROM sakila.rental 
+            WHERE return_date IS NULL
+            ) AS r 
         ON i.inventory_id = r.inventory_id
-        HAVING r.rental_id IS NULL) as i 
+        HAVING r.rental_id IS NULL
+        ) as i 
     ON f.film_id = i.film_id
     GROUP BY f.film_id
     HAVING f.film_id = ?
     `
     const [rows, fields] = await db.execute(sql, [id]);
-    res.status(200).json({ 
-        "status": 200,
-        "statusText": "OK",
-        "message": "Film retrieved",
-        "data": rows[0],
+    generateToken(req.cookies.token, null).then((token) => {
+        res.cookie("token", token, { httpOnly: true });
+        res.status(200).json({ 
+            "status": 200,
+            "statusText": "OK",
+            "message": "Film retrieved",
+            "data": rows[0],
+        });
     });
 };
 

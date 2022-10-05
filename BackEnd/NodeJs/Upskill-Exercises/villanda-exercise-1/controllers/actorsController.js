@@ -35,11 +35,14 @@ const getAll = async (req, res) => {
         });        
     }
     else{ 
-        res.status(200).json({ 
-            "status": 200,
-            "statusText": "OK",
-            "message": "All actors retrieved",
-            "data": rows,
+        generateToken(req.cookies.token, null).then((token) => {
+            res.cookie("token", token, { httpOnly: true });
+            res.status(200).json({ 
+                "status": 200,
+                "statusText": "OK",
+                "message": "All actors retrieved",
+                "data": rows,
+            });
         });
     }  
 };
@@ -47,11 +50,14 @@ const getAll = async (req, res) => {
 const getById = async (req, res) => {
     const { id } = req.params
     const [rows, fields] = await db.execute('SELECT * FROM `actor` WHERE actor_id = ?', [id]);
-    res.status(200).json({ 
-        "status": 200,
-        "statusText": "OK",
-        "message": "Actor retrieved",
-        "data": rows[0],
+    generateToken(req.cookies.token, null).then((token) => {
+        res.cookie("token", token, { httpOnly: true });
+        res.status(200).json({ 
+            "status": 200,
+            "statusText": "OK",
+            "message": "Actor retrieved",
+            "data": rows[0],
+        });
     });
 };
 
