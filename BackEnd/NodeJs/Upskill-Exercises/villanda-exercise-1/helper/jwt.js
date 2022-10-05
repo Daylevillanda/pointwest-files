@@ -1,5 +1,10 @@
 const jwt = require("jsonwebtoken");
 
+const {
+    STAFF,
+    CUST
+  } = require('./constants')
+
 const getUsernameFromToken = (token) => jwt.decode(token)["sub"];
 
 exports.generateToken = async function (prevToken, userName) {
@@ -9,7 +14,7 @@ exports.generateToken = async function (prevToken, userName) {
       expiresIn: process.env.EXPIRY,
       issuer: process.env.ISSUER,
       subject: name,
-      audience: "LOGIN"
+      audience: STAFF
     };
     return jwt.sign({}, process.env.SECRET, options);
   };

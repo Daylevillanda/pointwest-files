@@ -6,7 +6,25 @@ const {
   getById
 } = require('../controllers/customersController')
 
-router.route('/').get(getAll)
-router.route('/:id').get(getById)
+router.route('/').get((req, res, next) => {
+  const token = req.cookies.token
+  const audience = jwt.decode(token)["aud"]
+  if(audience.includes("SHOW_CUSTOMER")){
+    next()
+  }
+  else{
+    res.status(401).send({ message: "Unauthorized" })
+  }
+},getAll)
+router.route('/:id').get((req, res, next) => {
+  const token = req.cookies.token
+  const audience = jwt.decode(token)["aud"]
+  if(audience.includes("SHOW_CUSTOMER")){
+    next()
+  }
+  else{
+    res.status(401).send({ message: "Unauthorized" })
+  }
+},getById)
 
 module.exports = router
