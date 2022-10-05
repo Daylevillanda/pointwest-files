@@ -2,19 +2,21 @@ const db = require('../db/connect');
 const { generateToken } = require("../helper/jwt");
 
 const getAll = async (req, res) => {
-    const [rows, fields] = await db.execute('SELECT * FROM `film`');
-    res.status(200).json({ 
-        "status": 200,
-        "statusText": "OK",
-        "message": "All films retrieved",
-        "data": rows,
-    });
-};
-
-const getSearch = async (req, res) => {
     const { title, genre, last_name, available } = req.query;
 
-    const [rows, fields] = await db.execute('SELECT * FROM `film`');
+    let sql = `
+    SELECT f.*, COUNT(f.film_id) AS Stock
+    FROM sakila.film as f
+    LEFT JOIN (SELECT i.*, r.rental_id
+    FROM sakila.inventory as i
+    LEFT JOIN (SELECT * FROM sakila.rental WHERE return_date IS NULL) AS r 
+        ON i.inventory_id = r.inventory_id
+        HAVING r.rental_id IS NULL) as i 
+    ON f.film_id = i.film_id
+    GROUP BY f.film_id
+    `
+
+    const [rows, fields] = await db.execute(sql);
     let filteredResults = [...rows];
 
     if(title || genre || last_name || available){
@@ -23,6 +25,7 @@ const getSearch = async (req, res) => {
                 .filter(a => (String(a.title
                         .toLowerCase())
                         .startsWith(title.toLowerCase())))
+            console.log("asd")
         }
 
         if(genre) {         
@@ -36,10 +39,16 @@ const getSearch = async (req, res) => {
             filteredResults = filteredResults.filter(({film_id}) => (rows.find(r => (film_id == r.film_id))))
         }
 
-        // if(last_name) {
-        //     const [rows, fields] = await db.execute('SELECT * FROM `film_category` WHERE category_id = ?', [Number(genre)]);
-        //     filteredResults = filteredResults.filter(({film_id}) => (rows.find(r => (film_id == r.film_id))))
-        // }
+        if(last_name) {         
+            let sql = `
+            SELECT actor.last_name, actor.actor_id, film_actor.film_id
+            FROM actor 
+            INNER JOIN film_actor ON actor.actor_id = film_actor.actor_id
+            HAVING actor.last_name LIKE ?
+            `   
+            const [rows, fields] = await db.execute(sql, [`${last_name}%`]);
+            filteredResults = filteredResults.filter(({film_id}) => (rows.find(r => (film_id == r.film_id))))
+        }
         generateToken(req.cookies.token, null).then((token) => {
             res.cookie("token", token, { httpOnly: true });
             res.status(200).json({ 
@@ -51,16 +60,40 @@ const getSearch = async (req, res) => {
         });        
     }
     else {
-        res.status(400).json({ 
-            "status": 400,
-            "statusText": "BAD REQUEST",
-            "message": "Invalid Search",
-            "error": "Invalid Search",
+        res.status(200).json({ 
+            "status": 200,
+            "statusText": "OK",
+            "message": "All films retrieved",
+            "data": filteredResults,
         }); 
     }   
 };
 
+const getById = async (req, res) => {
+    const { id } = req.params
+
+    let sql = `
+    SELECT f.*, COUNT(f.film_id) AS Stock
+    FROM sakila.film as f
+    LEFT JOIN (SELECT i.*, r.rental_id
+    FROM sakila.inventory as i
+    LEFT JOIN (SELECT * FROM sakila.rental WHERE return_date IS NULL) AS r 
+        ON i.inventory_id = r.inventory_id
+        HAVING r.rental_id IS NULL) as i 
+    ON f.film_id = i.film_id
+    GROUP BY f.film_id
+    HAVING f.film_id = ?
+    `
+    const [rows, fields] = await db.execute(sql, [id]);
+    res.status(200).json({ 
+        "status": 200,
+        "statusText": "OK",
+        "message": "Film retrieved",
+        "data": rows[0],
+    });
+};
+
 module.exports = {
     getAll,
-    getSearch
+    getById
 };

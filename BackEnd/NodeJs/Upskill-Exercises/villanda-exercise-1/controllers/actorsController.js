@@ -5,16 +5,6 @@ const {
   } = require("../helper/jwt");
 
 const getAll = async (req, res) => {
-    const [rows, fields] = await db.execute('SELECT * FROM `actor`');
-    res.status(200).json({ 
-        "status": 200,
-        "statusText": "OK",
-        "message": "All actors retrieved",
-        "data": rows,
-    });
-};
-
-const getSearch = async (req, res) => {
     const { first_name, last_name } = req.query;
 
     const [rows, fields] = await db.execute('SELECT * FROM `actor`');
@@ -44,17 +34,28 @@ const getSearch = async (req, res) => {
             });
         });        
     }
-    else{
-        res.status(400).json({ 
-            "status": 400,
-            "statusText": "BAD REQUEST",
-            "message": "Invalid Search",
-            "error": "Invalid Search",
-        }); 
-    }   
+    else{ 
+        res.status(200).json({ 
+            "status": 200,
+            "statusText": "OK",
+            "message": "All actors retrieved",
+            "data": rows,
+        });
+    }  
+};
+
+const getById = async (req, res) => {
+    const { id } = req.params
+    const [rows, fields] = await db.execute('SELECT * FROM `actor` WHERE actor_id = ?', [id]);
+    res.status(200).json({ 
+        "status": 200,
+        "statusText": "OK",
+        "message": "Actor retrieved",
+        "data": rows[0],
+    });
 };
 
 module.exports = {
     getAll,
-    getSearch
+    getById
 };

@@ -3,10 +3,10 @@ const router = express.Router()
 
 const {
   getAll,
-  getSearch
+  getById
 } = require('../controllers/filmsController')
 
 router.route('/').get(getAll)
-router.route('/search').get(getSearch)
+router.route('/:id').get(getById)
 
 module.exports = router
