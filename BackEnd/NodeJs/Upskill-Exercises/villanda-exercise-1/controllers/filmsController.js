@@ -86,7 +86,7 @@ const getAll = async (req, res) => {
 };
 
 const getById = async (req, res) => {
-    const { film_id } = req.params
+    const { id } = req.params
 
     let sql = `
     SELECT f.*, COUNT(f.film_id) AS Stock
@@ -107,15 +107,29 @@ const getById = async (req, res) => {
     HAVING f.film_id = ?
     `
     const [rows, fields] = await db.execute(sql, [id]);
-    generateToken(req.cookies.token, null).then((token) => {
-        res.cookie("token", token, { httpOnly: true });
-        res.status(200).json({ 
-            "status": 200,
-            "statusText": "OK",
-            "message": "Film retrieved",
-            "data": rows[0],
+    
+    if(Object.entries(rows).length > 0 )
+    {
+        generateToken(req.cookies.token, null).then((token) => {
+            res.cookie("token", token, { httpOnly: true });
+            res.status(200).json({ 
+                "status": 200,
+                "statusText": "OK",
+                "message": "Film retrieved",
+                "data": rows[0],
+            });
         });
-    });
+    }
+    else {
+        generateToken(req.cookies.token, null).then((token) => {
+            res.cookie("token", token, { httpOnly: true });
+            res.status(404).json({ 
+                "status": 404,
+                "statusText": "NOT FOUND",
+                "message": "No film retrieved",
+            });
+        });
+    }
 };
 
 const insert = async (req, res) => {

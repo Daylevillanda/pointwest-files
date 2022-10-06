@@ -14,6 +14,8 @@ const customersRoute = require('./routes/customersRoute');
 const { login } = require('./controllers/loginController')
 const { verifyToken } = require("./helper/jwt");
 
+const { canAccess } = require('./helper/routeGuards')
+
 //middlewares
 app.use(express.json());
 app.use(cookieParser());
@@ -23,7 +25,7 @@ app.get('/', (req, res) => {res.status(200).send(`<h1>Welcome to Villanda Skilla
 app.post('/login', login);
 app.use('/api/v1/films', verifyToken, filmsRoute);
 app.use('/api/v1/actors', verifyToken, actorsRoute);
-app.use('/api/v1/customers', verifyToken, customersRoute);
+app.use('/api/v1/customers', verifyToken, canAccess("STAFF"), customersRoute);
 
 app.post('/test', (req, res) => {
   const { test } = req.body

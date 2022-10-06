@@ -14,7 +14,7 @@ exports.generateToken = async function (prevToken, userName) {
       expiresIn: process.env.EXPIRY,
       issuer: process.env.ISSUER,
       subject: name,
-      audience: STAFF
+      audience: CUST
     };
     return jwt.sign({}, process.env.SECRET, options);
   };
