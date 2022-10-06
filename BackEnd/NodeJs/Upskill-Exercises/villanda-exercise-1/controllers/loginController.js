@@ -5,25 +5,27 @@ const {
   } = require("../helper/jwt");
 
 exports.login = async (req, res) => {
-    const { email } = req.body
-    const [rows, fields] = await db.execute('SELECT * FROM `user` WHERE `email` = ?', [email]);
+    const { email, password } = req.body
+    const [rows, fields] = await db.execute('SELECT * FROM `user` WHERE `email` = ? AND `password` = ?', 
+        [email, password]);
+
     if(Object.entries(rows).length > 0){
-        generateToken(null, email).then((token) => {
+        generateToken(null, rows[0].user_id).then((token) => {
             res.cookie("token", token, { httpOnly: true });
             res.status(200).json({ 
                 "status": 200,
                 "statusText": "OK",
                 "message": "Login Successfuly",
                 "data": { 
-                    user_id: rows[0].customer_id,
+                    user_id: rows[0].user_id,
                     userName: rows[0].email
                 }
             });
         });
     }
-    else { res.status(401).json({ 
-        "status": 401,
-        "statusText": "Unauthorized",
+    else { res.status(403).json({ 
+        "status": 403,
+        "statusText": "FORBIDDEN",
         "message": "Login Failed"
     })}
 };
