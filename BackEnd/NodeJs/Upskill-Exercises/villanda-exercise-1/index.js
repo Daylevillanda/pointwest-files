@@ -10,6 +10,7 @@ const db = require('./db/connect');
 const filmsRoute = require('./routes/filmsRoute');
 const actorsRoute = require('./routes/actorsRoute');
 const customersRoute = require('./routes/customersRoute');
+const rentalsRoute = require('./routes/rentalsRoute');
 
 const { login } = require('./controllers/loginController')
 const { verifyToken } = require("./helper/jwt");
@@ -26,6 +27,7 @@ app.post('/login', login);
 app.use('/api/v1/films', verifyToken, filmsRoute);
 app.use('/api/v1/actors', verifyToken, actorsRoute);
 app.use('/api/v1/customers', verifyToken, canAccess("STAFF"), customersRoute);
+app.use('/api/v1/rentals', verifyToken, canAccess("STAFF"), rentalsRoute);
 
 app.post('/test', (req, res) => {
   const { test } = req.body

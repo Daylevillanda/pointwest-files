@@ -18,8 +18,8 @@ const getRoleFromToken = (token) => jwt.decode(token)["aud"];
 exports.generateToken = async function (prevToken, userName) {
 
     const user = await getUsernameFromId(userName);
-    const name =  user[0]?.email || getUsernameFromToken(prevToken);
-    const role = user[0]?.role === "STAFF" ? STAFF : CUST || getRoleFromToken(prevToken);
+    const name =  user[0]? user[0].email : getUsernameFromToken(prevToken);
+    const role = user[0]? user[0].role === "STAFF" ? STAFF : CUST : getRoleFromToken(prevToken);
     const options = {
       algorithm: process.env.ALGORITHM,
       expiresIn: process.env.EXPIRY,
