@@ -2,10 +2,10 @@ const db = require('../db/connect');
 const { generateToken } = require("../helper/jwt");
 
 const getAll = async (req, res) => {
-    const { title, category_id, last_name } = req.query;
+    const { title, category_id, last_name, out_of_stock} = req.query;
 
     let sql = `
-    SELECT f.*, COUNT(f.film_id) AS Stock
+    SELECT f.*, COUNT(i.film_id) AS stock
     FROM sakila.film as f
     LEFT JOIN (
         SELECT i.*, r.rental_id
@@ -25,7 +25,7 @@ const getAll = async (req, res) => {
     const [rows, fields] = await db.execute(sql);
     let filteredResults = [...rows];
 
-    if(title || category_id || last_name){
+    if(title || category_id || last_name || out_of_stock){
         if(title) {
             filteredResults = filteredResults
                 .filter(a => (String(a.title
@@ -62,6 +62,12 @@ const getAll = async (req, res) => {
             const [rows, fields] = await db.execute(sql, [`${last_name}%`]);
             filteredResults = filteredResults.filter(({film_id}) => (rows.find(r => (film_id == r.film_id))))
         }
+
+        if(out_of_stock === "true") {
+            filteredResults = filteredResults
+                .filter(a => a.stock === 0)
+        }
+        
         generateToken(req.cookies.token, null).then((token) => {
             res.cookie("token", token, { httpOnly: true });
             res.status(200).json({ 

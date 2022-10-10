@@ -18,6 +18,30 @@ const getAll = async (req, res) => {
                 .filter(a => a.return_date === null)
         }
 
+        if(returned === "false" && (exceeded)) {
+            let status = ""
+            if(exceeded === "true"){
+                status = `max_rental_duration < NOW()`
+            }
+            if(exceeded === "false"){
+                status = `max_rental_duration > NOW()`
+            }
+            let sql = `
+            SELECT r.*, i.film_id, i.rental_duration, (DATE_ADD(r.rental_date, INTERVAL i.rental_duration DAY)) as "max_rental_duration"
+            FROM (SELECT * FROM sakila.rental WHERE return_date IS NULL) as r
+            INNER JOIN (
+                SELECT i.inventory_id, i.film_id, f.rental_duration
+                FROM sakila.inventory as i
+                INNER JOIN sakila.film as f
+                ON i.film_id = f.film_id
+                ) as i
+            ON r.inventory_id = i.inventory_id
+            HAVING ${status} 
+            `
+            const [rows, fields] = await db.execute(sql);
+            filteredResults = filteredResults.filter(({rental_id}) => (rows.find(q => (rental_id == q.rental_id))))
+        }
+
         generateToken(req.cookies.token, null).then((token) => {
             res.cookie("token", token, { httpOnly: true });
             res.status(200).json({ 
@@ -96,7 +120,7 @@ const insert = async (req, res) => {
             res.status(400).json({ 
                 "status": 400,
                 "statusText": "BAD REQUEST",
-                "message": "Not Available"
+                "message": "Film is still out on rental"
             });
         });
     }
