@@ -2,7 +2,7 @@ const db = require('../db/connect');
 const { generateToken } = require("../helper/jwt");
 
 const getAll = async (req, res) => {
-    const { title, category_id, last_name, out_of_stock} = req.query;
+    const { title, genre, last_name, out_of_stock} = req.query;
 
     let sql = `
     SELECT f.*, COUNT(i.film_id) AS stock
@@ -25,7 +25,7 @@ const getAll = async (req, res) => {
     const [rows, fields] = await db.execute(sql);
     let filteredResults = [...rows];
 
-    if(title || category_id || last_name || out_of_stock){
+    if(title || genre || last_name || out_of_stock){
         if(title) {
             filteredResults = filteredResults
                 .filter(a => (String(a.title
@@ -33,7 +33,7 @@ const getAll = async (req, res) => {
                         .includes(title.toLowerCase())))
         }
 
-        if(category_id) { 
+        if(genre) { 
             // ----------------> if search by category name        
             // let sql = `
             // SELECT category.category_id, category.name, film_category.film_id
@@ -48,7 +48,7 @@ const getAll = async (req, res) => {
             FROM sakila.film_category 
             WHERE category_id = ?
             `  
-            const [rows, fields] = await db.execute(sql, [category_id]);
+            const [rows, fields] = await db.execute(sql, [genre]);
             filteredResults = filteredResults.filter(({film_id}) => (rows.find(r => (film_id == r.film_id))))
         }
 
