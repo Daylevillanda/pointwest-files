@@ -13,6 +13,24 @@ const getAll = async (req, res) => {
     let filteredResults = [...rows];
 
     if(film || returned || exceeded){
+        if(film) {
+            let sql = `
+            SELECT r.rental_id, i.title
+            FROM sakila.rental as r
+            INNER JOIN (
+                SELECT i.inventory_id, i.film_id, f.title
+                FROM sakila.inventory as i
+                INNER JOIN sakila.film as f
+                ON i.film_id = f.film_id
+                ) as i
+            ON r.inventory_id = i.inventory_id
+            HAVING i.title LIKE ?;
+            `
+            const [rows, fields] = await db.execute(sql,[`%${film}%`]);
+            filteredResults = filteredResults.filter(({rental_id}) => (rows.find(q => (rental_id == q.rental_id))))
+        
+        }
+
         if(returned === "false") {
             filteredResults = filteredResults
                 .filter(a => a.return_date === null)
