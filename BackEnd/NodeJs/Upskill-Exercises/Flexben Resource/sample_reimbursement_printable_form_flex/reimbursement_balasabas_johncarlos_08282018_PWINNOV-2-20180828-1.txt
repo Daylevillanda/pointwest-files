@@ -1,0 +1,78 @@
+Employee Name:	Balasabas, John Carlos
+Employee Number:	120290
+Date Submitted:		August 28, 2018
+Transaction Number: PWINNOV-2-20180828-1
+Amount:	Php 2500.00
+Status:	Submitted
+
+=== DETAILS ===
+CATEGORY: MEDICAL Claim Category
+N/A
+
+CATEGORY: APPLIANCE Claim Category
+N/A
+
+CATEGORY: Beauty & Wellness Claim Category
+Item # 1
+Date: August 20, 2018
+OR Number: 11111222223333
+Name of Establishment: Jollibee
+TIN of Establishment: 1111111111111
+Amount: Php800.00
+Status: Submitted
+
+Item # 2
+Date: August 21, 2018
+OR Number: 11111222224444
+Name of Establishment: Jollibee
+TIN of Establishment: 1111111111111
+Amount: Php1200.00
+Status: Submitted
+
+CATEGORY: FOOD, RESTAURANT & GROCERIES Claim Category
+N/A
+
+CATEGORY: FASHION Claim Category
+Item # 1
+Date: August 15, 2018
+OR Number: 111115555553333
+Name of Establishment: Bench
+TIN of Establishment: 2222222222
+Amount: Php500.00
+Status: Submitted
+
+CATEGORY: ENTERTAINMENT Claim Category
+N/A
+
+CATEGORY: GADGETS Claim Category
+N/A
+
+CATEGORY: TRANSPORTATION Claim Category
+N/A
+
+CATEGORY: TRAVEL & LEISURE Claim Category
+N/A
+
+CATEGORY: CONNECTIVITY Claim Category
+N/A
+
+CATEGORY: Applications and Software Claim Category
+N/A
+
+CATEGORY: HOME IMROVEMENTS & FURNITURES Claim Category
+N/A
+
+CATEGORY: LIFE INSURANCE Claim Category
+N/A
+
+CATEGORY: Books and Subscriptions Claim Category
+N/A
+
+CATEGORY: OFFICE SUPPLIES Claim Category
+N/A
+
+CATEGORY: TRAINING & TUITION Claim Category
+N/A
+
+CATEGORY: Corporate Social Responsibility Claim Category
+N/A
