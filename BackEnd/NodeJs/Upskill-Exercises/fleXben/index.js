@@ -9,6 +9,7 @@ const { verifyToken } = require('./services/jwt')
 const { loginController } = require('./controllers/loginController')
 const { logoutController } = require('./controllers/logoutController')
 
+const fileReimbursementRoute = require('./routes/fileReimbursementRoute');
 const flexCycleCutoffRoute = require('./routes/flexCycleCutoffRoute');
 
 //middlewares
@@ -19,6 +20,7 @@ app.use(cookieParser());
 app.get('/', (req, res) => {res.status(200).send(`Welcome to FleXben`)});
 app.post('/api/v1/login', loginController);
 app.get("/api/v1/logout", verifyToken, logoutController);
+app.use("/api/v1/file-reimbursement", verifyToken, fileReimbursementRoute);
 app.use("/api/v1/flex-cycle-cutoff", verifyToken, flexCycleCutoffRoute);
 app.get('*', (req, res) => {res.status(404).send(`Resource not found`)});
 

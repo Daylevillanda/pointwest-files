@@ -1,0 +1,1 @@
+exports.minimumAmount = 500
