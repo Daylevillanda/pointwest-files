@@ -245,7 +245,7 @@ const updateReimbursement = async (req, res) => {
         const updateReimbursement = await db.query(
             `
             UPDATE flex_reimbursement 
-            SET transaction_number = "${transactionNumber}", status = "Submitted"
+            SET transaction_number = "${transactionNumber}", status = "Submitted", date_submitted = CURRENT_DATE()
             WHERE flex_reimbursement_id = ${validate[0][0]?.flex_reimbursement_id}
         `);
         const updateReimbursementItems = await db.query(
