@@ -1,11 +1,77 @@
+Employee Name: Beck, Jan
+Employee Number: 12034
+Date Submitted: October 13, 2022
+Transaction Number: PWINNOV-4-20221013-18
+Amount:	Php 8000
+Status: Submitted
 
-    Employee Name: Beck, Jan
-    Employee Number: 12034
-    Date Submitted: October 13, 2022
-    Transaction Number: PWINNOV-4-20221013-18
-    Amount:	Php 8000
-    Status: Submitted
+=== DETAILS ===
 
-    === DETAILS ===
+CATEGORY: MEDICAL Claim Category
+Item # 1
+Date: September 01, 2022
+OR Number: 634102984
+Name of Establishment: establishment
+TIN of Establishment: 102984
+Amount: Php 4000
+Status: Submitted
 
-    
+Item # 2
+Date: September 01, 2022
+OR Number: 634102984
+Name of Establishment: establishment
+TIN of Establishment: 102984
+Amount: Php 4000
+Status: Submitted
+
+
+CATEGORY: APPLIANCE Claim Category
+N/A
+
+CATEGORY: Beauty & Wellness Claim Category
+N/A
+
+CATEGORY: FOOD, RESTAURANT & GROCERIES Claim Category
+N/A
+
+CATEGORY: FASHION Claim Category
+N/A
+
+CATEGORY: ENTERTAINMENT Claim Category
+N/A
+
+CATEGORY: GADGETS Claim Category
+N/A
+
+CATEGORY: TRANSPORTATION Claim Category
+N/A
+
+CATEGORY: TRAVEL & LEISURE Claim Category
+N/A
+
+CATEGORY: CONNECTIVITY Claim Category
+N/A
+
+CATEGORY: Applications and Software Claim Category
+N/A
+
+CATEGORY: HOME IMROVEMENTS & FURNITURES Claim Category
+N/A
+
+CATEGORY: LIFE INSURANCE Claim Category
+N/A
+
+CATEGORY: Books and Subscriptions Claim Category
+N/A
+
+CATEGORY: OFFICE SUPPLIES Claim Category
+N/A
+
+CATEGORY: TRAINING & TUITION Claim Category
+N/A
+
+CATEGORY: Corporate Social Responsibility Claim Category
+N/A
+
+CATEGORY: LEAVE BUY BACK
+N/A
