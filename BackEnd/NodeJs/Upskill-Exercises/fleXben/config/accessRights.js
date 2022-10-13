@@ -10,3 +10,6 @@ const rights = {
 exports.getAccessRights = (id) => {
     return rights[id]
 }
+
+exports.EMPLOYEE = 1;
+exports.HR = 2;

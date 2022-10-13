@@ -1,0 +1,11 @@
+
+    Employee Name: Beck, Jan
+    Employee Number: 12034
+    Date Submitted: October 13, 2022
+    Transaction Number: PWINNOV-4-20221013-18
+    Amount:	Php 8000
+    Status: Submitted
+
+    === DETAILS ===
+
+    

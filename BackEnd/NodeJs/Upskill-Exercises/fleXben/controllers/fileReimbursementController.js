@@ -201,7 +201,6 @@ const removeReimbursement = async (req, res) => {
 }
 
 const updateReimbursement = async (req, res) => {
-    const { id } = req.params
     const action = req.body
     let token = req.cookies.token
     let empId = getIdFromToken(token)
@@ -213,10 +212,10 @@ const updateReimbursement = async (req, res) => {
         FROM flexben.flex_reimbursement as r
         INNER JOIN (SELECT * FROM flexben.flex_cycle_cutoff WHERE is_active = "y") as c
         ON r.flex_cutoff_id = c.flex_cutoff_id
-        HAVING r.flex_reimbursement_id = ? AND r.employee_id = ?
+        HAVING r.employee_id = ?
     `
 
-    const validate = await db.execute(sql, [id, empId])
+    const validate = await db.execute(sql, [empId])
     if(validate[0][0] && action.submit === true){
         if(validate[0][0]?.status === "Submitted" || validate[0][0]?.status === "Approved"){
             return res.status(400).json({ 
@@ -241,7 +240,7 @@ const updateReimbursement = async (req, res) => {
             HAVING e.employee_id = ?
         `
         const getCompanycode = await db.execute(getCompanycodeSQL, [empId])
-        let transactionNumber = getCompanycode[0][0]?.code+validate[0][0]?.flex_cutoff_id+moment(Date.now()).format('YYYYMMDD')+validate[0][0]?.flex_reimbursement_id
+        let transactionNumber = getCompanycode[0][0]?.code+'-'+validate[0][0]?.flex_cutoff_id+'-'+moment(Date.now()).format('YYYYMMDD')+'-'+validate[0][0]?.flex_reimbursement_id
         const updateReimbursement = await db.query(
             `
             UPDATE flex_reimbursement 
@@ -276,44 +275,3 @@ module.exports = {
     removeReimbursement,
     updateReimbursement
 };
-
-
-// const getAll = async (req, res) => {
-//     let token = req.cookies.token
-//     let id = getIdFromToken(token)
-//     let sql = `SELECT * FROM flexben.flex_reimbursement WHERE employee_id = ? ORDER BY flex_cut_off_id DESC`
-//     const [rows] = await db.execute(sql,[Number(id)]);
-//     const new_token = await generateToken(token, null)
-//     res.cookie("token", new_token, { httpOnly: true });
-//     res.status(200).json({ 
-//         "status": 200,
-//         "statusText": "OK",
-//         "message": rows[0]? "All reimbursements retrieved" : "No reimbursements found",
-//         "data": rows,
-//     });
-// };
-
-// const getById = async (req, res) => {
-//     const { id } = req.params
-//     let token = req.cookies.token
-//     const new_token = await generateToken(token, null)
-//     if(Number(id)){
-//         let sql_reimbursement = `SELECT * FROM flexben.flex_reimbursement WHERE flex_reimbursement_id = ?`
-//         const reimbursement = await db.execute(sql_reimbursement,[Number(id)]);
-//         let sql_items = `SELECT * FROM flexben.flex_reimbursement_details WHERE flex_reimbursement_id = ?`
-//         const [rows] = await db.execute(sql_items,[Number(reimbursement[0][0]?.flex_reimbursement_id)]);
-//         res.cookie("token", new_token, { httpOnly: true });
-//         return res.status(200).json({ 
-//             "status": 200,
-//             "statusText": "OK",
-//             "message": reimbursement[0][0]? "Reimbursement retrieved" : "No Reimbursement found",
-//             "data": {reimbursement: reimbursement[0][0] || {}, items: rows},
-//         });
-//     }
-//     res.cookie("token", new_token, { httpOnly: true });
-//     res.status(400).json({ 
-//         "status": 400,
-//         "statusText": "BAD REQUEST",
-//         "message": "BAD REQUEST"
-//     });
-// };
