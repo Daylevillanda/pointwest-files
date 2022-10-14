@@ -3,6 +3,7 @@ const router = express.Router()
 
 const { getActiveReimbursement, addReimbursement, removeReimbursement, updateReimbursement } = require('../controllers/fileReimbursementController')
 const { generateReimbursement } = require('../controllers/generateController')
+const { getFlexPoint } = require('../controllers/flexPointController')
 
 router.route('/')
   .get(getActiveReimbursement)
@@ -13,5 +14,8 @@ router.route('/item/:id')
 
 router.route('/generate')
   .get(generateReimbursement)
+
+router.route('/flex-points')
+  .post(getFlexPoint)
 
 module.exports = router
