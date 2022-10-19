@@ -1,5 +1,4 @@
 const { jwt } = require("../config/middlewares");
-const db = require('../config/db');
 
 const getRoleFromToken = (token) => jwt.decode(token)["role"];
 const getEmailFromToken = (token) => jwt.decode(token)["sub"];

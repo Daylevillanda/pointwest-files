@@ -3,6 +3,7 @@ require('dotenv').config();
 const { cookieParser, express } = require("./config/middlewares")
 const db = require('./config/db');
 const routes = require("./routes/index")
+const {auth} = require("./routes/guards/index")
 
 const app = express();
 app.use(express.json());
