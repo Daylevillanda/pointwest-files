@@ -9,18 +9,19 @@ const validateCredential = async (credentials) => {
                     error: "Incorrect credentials"
                 }
             }
-            return {
-                employee_id: user[0]?.employee_id,
-                email: user[0]?.email,
-                firstname: user[0]?.firstname,
-                lastname: user[0]?.lastname,
-                role_id: user[0]?.role_id,
-            }
+            let result = user.map(
+                (o) => ({ 
+                    employee_id: o.employee_id,
+                    email: o.email,
+                    firstname: o.firstname,
+                    lastname: o.lastname,
+                    role_id: o.role_id
+                })
+            )
+            return result[0]
         }
         catch(error){
-            return {
-                error: error.message
-            }
+            return {error: error.message}
         }        
     }
     return {error: "Missing Email/Password"}

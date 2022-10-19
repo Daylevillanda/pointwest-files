@@ -8,13 +8,11 @@ const login = async (req, res) => {
     if(!user.error){
         const token = await jwtService.generateToken(null, user)
         res.cookie("token", token, { httpOnly: true });
-        response = { status:200, statusText:"OK" }
+        response.status = 200
+        response.statusText = "OK"
+        response.data = user
     }
-    res.status(response.status).json({ 
-        "status": response.status,
-        "statusText": response.statusText,
-        "data": user
-    })
+    res.status(response.status).json(response)
 };
 
 module.exports = {
