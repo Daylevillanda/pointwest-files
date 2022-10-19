@@ -39,7 +39,27 @@ const getReimbursementById = async (req, res) => {
     res.status(200).json(response);
 }
 
+const getReimbursementFilter = async (req, res) => {
+    let query = req.query
+    let token = req.cookies.token
+    const new_token = await jwtService.generateToken(token, null)
+    res.cookie("token", new_token, { httpOnly: true });
+    const reimbursement = await reimbursementService.getReimbursementFilter(query)
+    if(!reimbursement.error){
+        if(reimbursement[0]){
+            response.message = "Filtered Reimbursements retrieved"
+        }else{
+            response.message = "No reimbursements found"
+        }        
+        response.status = 200
+        response.statusText = "OK"
+    }
+    response.data = reimbursement
+    res.status(200).json(response);
+}
+
 module.exports = {
     getReimbursement,
-    getReimbursementById
+    getReimbursementById,
+    getReimbursementFilter
 }

@@ -52,7 +52,28 @@ const getReimbursementById = async (id) => {
     }        
 }
 
+const getReimbursementFilter = async (query) => {
+    try{
+        let searchParameters = ["emp_num", "first_name", "last_name"]
+        for(let i in query){
+            if(!searchParameters.includes(i))
+                return {error: `'${i}' is not a valid search parameter`}            
+        }
+        if(query.emp_num || query.first_name || query.last_name){
+            const [data] = await reimbursementRepository.getFilter(query)
+            let reimbursement = await mapReimbursements(data)
+            reimbursement = await Promise.all(reimbursement.map(async (o) => ({...o, items: (await reimbursementRepository.getItems(o.flex_reimbursement_id))[0]})))
+            return reimbursement 
+        }       
+        return []
+    }
+    catch(error){
+        return {error: error.message}
+    }        
+}
+
 module.exports = {
     getReimbursement,
-    getReimbursementById
+    getReimbursementById,
+    getReimbursementFilter
 }
