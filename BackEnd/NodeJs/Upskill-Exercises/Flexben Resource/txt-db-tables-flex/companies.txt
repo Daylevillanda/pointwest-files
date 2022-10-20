@@ -1,2 +1,0 @@
-company_id|code|name|description|logo
-1|PWINNOV|Pointwest Innovations Corporation|Pointwest Innovations Corporation|pointwest-logo.png
