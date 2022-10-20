@@ -14,20 +14,25 @@ let itemsSQL = `
     FROM flexben.flex_reimbursement_details
     WHERE flex_reimbursement_id = ?;
 `
+const updateReimbursement = async (id, status) => {
+    status = status[0].toUpperCase() + status.slice(1)
+    let updateReimbursementSQL = `UPDATE flex_reimbursement SET status = ? WHERE flex_reimbursement_id = ?`
+    let updateItemsSQL = `UPDATE flex_reimbursement_details SET status = ? WHERE flex_reimbursement_id = ?`
+    const reimbursement = await db.execute(updateReimbursementSQL, [status, id]);
+    const items = await db.execute(updateItemsSQL, [status, id]);
+    return [{reimbursement:reimbursement[0].info, items:items[0].info}]
+}
 
 exports.getAll = async () => {
-    const reimbursements = await db.execute(reimbursementSQL)
-    return reimbursements
+    return await db.execute(reimbursementSQL)
 }
 
 exports.getById = async (id) => {
-    const reimbursement = await db.execute(reimbursementByIdSQL, [id])
-    return reimbursement
+    return await db.execute(reimbursementByIdSQL, [id])
 }
 
 exports.getItems = async (id) => {
-    const items = await db.execute(itemsSQL, [id])
-    return items
+    return await db.execute(itemsSQL, [id])
 }
 
 exports.getFilter = async ({emp_num, last_name, first_name}) => {
@@ -35,6 +40,9 @@ exports.getFilter = async ({emp_num, last_name, first_name}) => {
     let lastname = last_name? `LIKE "%${last_name}%"` :"IS NOT NULL"
     let firstname = first_name? `LIKE "%${first_name}%"` :"IS NOT NULL"
     let reimbursementFilterSQL = reimbursementSQL + `HAVING e.employee_number ${employee_number} AND e.lastname ${lastname} AND e.firstname ${firstname}`
-    const reimbursements = await db.execute(reimbursementFilterSQL)
-    return reimbursements
+    return await db.execute(reimbursementFilterSQL)
+}
+
+exports.updateById = async (id,status) => {
+    return await updateReimbursement(id,status)
 }

@@ -58,8 +58,26 @@ const getReimbursementFilter = async (req, res) => {
     res.status(200).json(response);
 }
 
+const updateReimbursement = async (req, res) => {
+    const { id } = req.params
+    const body = req.body
+    let token = req.cookies.token
+    const new_token = await jwtService.generateToken(token, null)
+    res.cookie("token", new_token, { httpOnly: true });
+    const reimbursement = await reimbursementService.updateReimbursement(id,body)
+    if(!reimbursement.error){       
+        response.status = 200
+        response.statusText = "OK"
+        response.message = `Reimbursement successfully '${body.action.toLowerCase()}'`
+    }
+    response.data = reimbursement
+    res.status(200).json(response);
+}
+
+
 module.exports = {
     getReimbursement,
     getReimbursementById,
-    getReimbursementFilter
+    getReimbursementFilter,
+    updateReimbursement
 }
