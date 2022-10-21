@@ -1,0 +1,47 @@
+# IAM Role
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:PutItem
+        - SES:*
+      Resource: "arn:aws:dynamodb:us-east-1:*:table/users"
+
+# IAM Role v2
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:PutItem
+      Resource: "arn:aws:dynamodb:us-east-1:*:table/users"
+    - Effect: Allow
+      Action:
+        - SES:*
+      Resource: "*"
+
+# The HTTP API Configuration
+
+functions:
+  createUser:
+    handler: handler.handler
+    events:
+      - http:
+          path: /user
+          method: post
+          cors: true
+
+# The DynamoDB Resource:
+
+resources:
+  Resources:
+    usersTable:
+      Type: AWS::DynamoDB::Table
+      Properties:
+        TableName: users
+        AttributeDefinitions:
+          - AttributeName: email
+            AttributeType: S
+        KeySchema:
+          - AttributeName: email
+            KeyType: HASH
+        ProvisionedThroughput:
+          ReadCapacityUnits: 1
+          WriteCapacityUnits: 1
