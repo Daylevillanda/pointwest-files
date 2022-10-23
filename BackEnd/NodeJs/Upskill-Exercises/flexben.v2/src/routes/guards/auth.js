@@ -1,6 +1,6 @@
 const { jwt } = require("../../config/middlewares");
 
-let response = { status:401, statusText:"Unauthorized"}
+let response = { status:401, statusText:"Unauthenticated"}
 
 exports.verifyToken = async (req, res, next) => {
     const token = req.cookies.token;

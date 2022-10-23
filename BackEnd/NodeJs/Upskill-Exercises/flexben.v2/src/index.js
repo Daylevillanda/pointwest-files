@@ -2,7 +2,7 @@ require('dotenv').config();
 
 const { cookieParser, express } = require("./config/middlewares")
 const db = require('./config/db');
-const {login,logout,reimbursement} = require("./routes/index")
+const {login,logout,reimbursement,fileReimbursement} = require("./routes/index")
 const {auth} = require("./routes/guards/index")
 
 const app = express();
@@ -14,6 +14,7 @@ app.get('/', (req, res) => {res.status(200).send(`Welcome to FleXben v2.0`)});
 router.use('/login',login)
 router.use('/logout',auth.verifyToken, logout)
 router.use('/reimbursement',auth.verifyToken, reimbursement)
+router.use('/file-reimbursement',auth.verifyToken, fileReimbursement)
 app.use('/api/v2', router);
 
 const start = async () => {

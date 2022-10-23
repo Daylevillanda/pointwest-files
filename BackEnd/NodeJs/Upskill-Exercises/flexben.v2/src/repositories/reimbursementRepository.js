@@ -9,7 +9,7 @@ INNER JOIN (SELECT * FROM flexben.flex_cycle_cutoff WHERE is_active = "y") as c
 ON r.flex_cutoff_id = c.flex_cutoff_id
 `
 const reimbursementByIdSQL = reimbursementSQL + `HAVING r.flex_reimbursement_id = ?`
-let itemsSQL = `
+const itemsSQL = `
     SELECT *
     FROM flexben.flex_reimbursement_details
     WHERE flex_reimbursement_id = ?;
