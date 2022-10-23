@@ -17,11 +17,27 @@ const getReimbursement = async (req, res) => {
         response.statusText = "OK"
     }
     response.data = reimbursement
-    res.status(200).json(response);
+    res.status(response.status).json(response);
+}
+
+const addReimbursement = async (req, res) => {
+    let token = req.cookies.token
+    const values = req.body
+    const new_token = await jwtService.generateToken(token, null)
+    res.cookie("token", new_token, { httpOnly: true });
+    const reimbursement = await fileReimbursementService.addReimbursement(token,values)
+    if(!reimbursement.error){
+        response.message = "Reimbursement successfully added" 
+        response.status = 200
+        response.statusText = "OK"
+    }
+    response.data = reimbursement
+    res.status(response.status).json(response);
 }
 
 module.exports = {
-    getReimbursement
+    getReimbursement,
+    addReimbursement
 }
 
 // const { jwtService, reimbursementService } = require("../services/index")

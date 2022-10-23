@@ -26,3 +26,7 @@ exports.mapItems = async (items) => {
 exports.validateQuery = async (query, parameter) => {
     return query.filter((a)=>!parameter.includes(a.toLowerCase()))
 }
+
+exports.validateExistQuery = async (query, parameter) => {
+    return query.filter((a)=>parameter.includes(a.toLowerCase()))
+}

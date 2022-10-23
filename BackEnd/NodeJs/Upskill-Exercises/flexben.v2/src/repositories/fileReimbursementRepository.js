@@ -1,12 +1,14 @@
 const db = require('../config/db');
 
 const reimbursementSQL = `
-SELECT r.*, e.*,c.*
+SELECT r.*, e.*,c.*,co.*
 FROM (SELECT * FROM flexben.flex_reimbursement ORDER BY status = "Submitted" DESC) as r
 INNER JOIN flexben.employee as e
 ON r.employee_id = e.employee_id
 INNER JOIN (SELECT * FROM flexben.flex_cycle_cutoff WHERE is_active = "y") as c
 ON r.flex_cutoff_id = c.flex_cutoff_id
+INNER JOIN flexben.company as co
+ON e.company_id = co.company_id
 HAVING r.employee_id = ?
 `
 const itemsSQL = `
@@ -22,6 +24,31 @@ exports.getAll = async (id) => {
 exports.getItems = async (id) => {
     return await db.execute(itemsSQL, [id])
 }
+
+exports.createReimbursement = async (input) => {
+    const createReimbursementSQL = `
+    INSERT INTO flexben.flex_reimbursement (employee_id, flex_cutoff_id, total_reimbursement_amount)
+    VALUES (?,?,?)
+    `
+    return await db.execute(createReimbursementSQL,input)
+}
+
+exports.createItem = async (input) => {
+    const createItemtSQL = `
+    INSERT INTO flexben.flex_reimbursement_details (flex_reimbursement_id, or_number, name_of_establishment, tin_of_establishment, amount, category_id, date_added)
+    VALUES (?,?,?,?,?,?,?)
+    `
+    return await db.execute(createItemtSQL,input)
+}
+
+exports.updateReimbursement = async (id, input) => {
+    const updateReimbursementSQL = `
+    UPDATE flexben.flex_reimbursement SET ? WHERE flex_reimbursement_id = ?
+    `
+    return await db.query(updateReimbursementSQL,[input, id])
+}
+
+
 // const reimbursementByIdSQL = reimbursementSQL + `HAVING r.flex_reimbursement_id = ?`
 // const itemsSQL = `
 //     SELECT *

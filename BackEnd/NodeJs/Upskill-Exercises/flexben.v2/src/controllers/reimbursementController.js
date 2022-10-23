@@ -17,7 +17,7 @@ const getReimbursement = async (req, res) => {
         response.statusText = "OK"
     }
     response.data = reimbursement
-    res.status(200).json(response);
+    res.status(response.status).json(response);
 }
 
 const getReimbursementById = async (req, res) => {
@@ -36,7 +36,7 @@ const getReimbursementById = async (req, res) => {
         response.statusText = "OK"
     }
     response.data = reimbursement
-    res.status(200).json(response);
+    res.status(response.status).json(response);
 }
 
 const getReimbursementFilter = async (req, res) => {
@@ -55,7 +55,7 @@ const getReimbursementFilter = async (req, res) => {
         response.statusText = "OK"
     }
     response.data = reimbursement
-    res.status(200).json(response);
+    res.status(response.status).json(response);
 }
 
 const updateReimbursement = async (req, res) => {
@@ -71,7 +71,7 @@ const updateReimbursement = async (req, res) => {
         response.message = `Reimbursement successfully '${body.action.toLowerCase()}'`
     }
     response.data = reimbursement
-    res.status(200).json(response);
+    res.status(response.status).json(response);
 }
 
 
