@@ -1,0 +1,24 @@
+org: dayle
+app: serverless-project-2
+service: new-customer-service
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+  iamRoleStatements:
+    - Effect: Allow
+      Action:
+        - dynamodb:PutItem
+        - SES:*
+      Resource: "arn:aws:dynamodb:us-east-1:*:table/users"
+
+functions:
+  hello:
+    handler: handler.handler
+    events:
+      - http:
+          path: /user
+          method: post
+          cors: true

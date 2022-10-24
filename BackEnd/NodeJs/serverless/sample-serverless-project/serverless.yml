@@ -1,0 +1,13 @@
+org: dayle
+app: sample-serverless-project
+service: sample-serverless-project
+
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  hello:
+    handler: handler.hello
