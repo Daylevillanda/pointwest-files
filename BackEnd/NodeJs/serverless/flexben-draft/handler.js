@@ -6,8 +6,16 @@ const serverless = require("serverless-http");
 const express = require("express");
 const app = express();
 
-const USERS_TABLE = "users-table-dev";
-const dynamoDbClient = new AWS.DynamoDB.DocumentClient();
+let options = {};
+if (process.env.IS_OFFLINE) {
+  options = {
+    region: 'localhost',
+    endpoint: 'http://localhost:8000',
+  };
+}
+
+const USERS_TABLE = "flexben";
+const dynamoDbClient = new AWS.DynamoDB.DocumentClient(options);
 
 const verifier = CognitoJwtVerifier.create({
   userPoolId: "us-east-1_kKRSmZZw5",
@@ -39,16 +47,17 @@ app.get("/users", async function (req, res) {
 
 app.post("/login", async (req, res, next) => {
   const token  = req.body.token
-  let response = ""
+  let details = {}
   try {
     const payload = await verifier.verify(token);
-    console.log(payload)
-    response = "Token is valid. Payload: "+payload;
+    details = payload
+    response = "Token is valid";
   } catch {
     response = "Token not valid!";
   }
   return res.status(200).json({
     message: response,
+    payload: details
   });
 });
 
