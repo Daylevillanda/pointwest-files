@@ -1,0 +1,17 @@
+{
+  "name": "group2-flexben",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "nodemon --exec \"serverless offline\""
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "serverless-http": "^2.7.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.1241.0",
+    "nodemon": "^2.0.20",
+    "serverless-offline": "^11.2.0"
+  }
+}

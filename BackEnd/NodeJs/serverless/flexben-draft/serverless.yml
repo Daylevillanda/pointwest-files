@@ -20,7 +20,7 @@ provider:
             - dynamodb:PutItem
             - dynamodb:UpdateItem
             - dynamodb:DeleteItem
-          Resource: arn:aws:dynamodb:us-east-1:589520710570:table/users-table-dev
+          Resource: arn:aws:dynamodb:us-east-1:589520710570:table/flexben
 
 functions:
   api:
