@@ -1,7 +1,9 @@
 import { StatusBar } from 'expo-status-bar';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function Authentication({navigation}) {
+export default function Authentication({navigation, appState}) {
+  const { isHungry, setIsHungry } = appState
+  console.log(isHungry)
   const onPressHandler = () => {
     navigation.replace('Home')
   }

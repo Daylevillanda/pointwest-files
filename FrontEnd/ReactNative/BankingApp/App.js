@@ -1,9 +1,7 @@
-import AppNavigation from './src/AppNavigation/AppNavigation'
-import AppState from './src/AppState/AppState'
+import AppNavigation from './src/AppNavigation/main'
+import AppState from './src/AppState/main'
 
 export default function App() {
-  return (
-    <AppState/>
-  );
+  return <AppNavigation AppState={AppState()}/>
 }
 

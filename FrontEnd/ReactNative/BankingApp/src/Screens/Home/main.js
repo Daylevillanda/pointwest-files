@@ -1,8 +1,8 @@
 import { StatusBar } from 'expo-status-bar';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function Home({navigation, AppState}) {
-  const { isHungry, setIsHungry } = AppState
+export default function Home({navigation, appState}) {
+  const { isHungry, setIsHungry } = appState
   console.log(isHungry)
   return (
     <View style={styles.container}>
@@ -15,6 +15,7 @@ export default function Home({navigation, AppState}) {
       </Pressable>
       <Pressable
         onPress={()=>navigation.navigate('Card')}
+        // onPress={()=>setIsHungry(!isHungry)}
       >
         <Text>Go to Card</Text>
       </Pressable>
