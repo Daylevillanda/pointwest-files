@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 
 export default function AppState() {
-    const [isHungry, setIsHungry] = useState(true);
+    // const [isHungry, setIsHungry] = useState(true);
     return {
-        isHungry,
-        setIsHungry
+        // isHungry,
+        // setIsHungry
     }
 }

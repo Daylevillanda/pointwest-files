@@ -1,9 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function Home({navigation, appState}) {
-  const { isHungry, setIsHungry } = appState
-  console.log(isHungry)
+export default function Home({navigation}) {
   return (
     <View style={styles.container}>
       <Text>This is Home</Text>

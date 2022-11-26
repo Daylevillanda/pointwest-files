@@ -1,32 +1,25 @@
 import { StatusBar } from 'expo-status-bar';
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 
-export default function Authentication({navigation, appState}) {
-  const { isHungry, setIsHungry } = appState
-  console.log(isHungry)
+import { GlobalStyle } from '../../Reusable/Styles/main'
+import { useFonts, Poppins_600SemiBold } from '@expo-google-fonts/poppins';
+export default function Authentication({navigation}) {
   const onPressHandler = () => {
     navigation.replace('Home')
   }
+  let [fontsLoaded] = useFonts({
+    Poppins_600SemiBold,
+  });
 
+  if (!fontsLoaded) {
+    return null;
+  }
   return (
-    <View style={styles.container}>
-      <Text>This is Authentication</Text>
-      <StatusBar style="auto" />
-      {/* <StatusBar style="light || dark" /> */}
-      <Pressable
-        onPress={onPressHandler}
-      >
-        <Text>Go to Home</Text>
-      </Pressable>
+    <View style={GlobalStyle.mainContainer}>
+      <StatusBar style="dark" />
+      <View style={[GlobalStyle.mainHeader, {alignSelf: 'center'}]}>
+        <Text style={{fontFamily:'Poppins_600SemiBold', fontSize:20}}>Security screen</Text>
+      </View>
     </View>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: 'white',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
