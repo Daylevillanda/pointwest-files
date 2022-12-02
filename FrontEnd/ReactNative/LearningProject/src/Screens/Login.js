@@ -21,6 +21,7 @@ export default function Login({appState}) {
       <Text>Login</Text>
       <StatusBar style="auto"/>
       <TextInput
+      keyboardType='number-pad'
         style={{height: 40, textAlign:'center'}}
         placeholder="1234"
         onChangeText={input => {
