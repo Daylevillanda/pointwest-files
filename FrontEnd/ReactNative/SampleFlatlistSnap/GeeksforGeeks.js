@@ -14,9 +14,10 @@ export default GeeksforGeeks;
 const styles = StyleSheet.create({
     container: {
         marginTop: 200,
+        // marginHorizontal: 10,
         height: 400,
-        width: Dimensions.get("window").width,
-        // width: 300,
+        // width: Dimensions.get("window").width,
+        width: 300,
         justifyContent: "center",
         alignItems: "center",
         backgroundColor: "#3B5323",
